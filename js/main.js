@@ -27,7 +27,7 @@ const TFT_TRANSLATIONS = {
     "contact.available":"Available Now","contact.infoTitle":"Get in Touch","contact.infoDesc":"Delivering Excellence. Get in touch today and let us handle your delivery needs across Greece and Cyprus.",
     "contact.lblAddress":"Address","contact.lblPhone":"Phone","contact.lblEmail":"Email","contact.lblHours":"Working Hours",
     "form.title":"Send Us a Message","form.desc":"Fill out the form below and our team will reach out within 24 hours.",
-    "form.name":"Full Name *","form.email":"Email *","form.phone":"Phone","form.subject":"Subject","form.message":"Message *","form.messagePh":"Tell us about yourself or your inquiry...","form.send":"Send Message","form.success":"Thank you! Your message has been sent successfully.",
+    "form.name":"Full Name *","form.email":"Email *","form.phone":"Phone","form.subject":"Subject","form.message":"Message *","form.messagePh":"Tell us about yourself or your inquiry...","form.openBtn":"Open Message Form","form.send":"Send Message","form.success":"Thank you! Your message has been sent successfully.",
     "footer.desc":"Where Prompt Delivery Meets Today's Need.<br>Reliable same-day, parcel, and door-to-door delivery across Greece and Cyprus.",
     "settings.title":"Settings","settings.lang":"Language",
     "map.eyebrow":"Our Location","map.title":"Find Us on the Map","map.desc":"Visit our headquarters in Athens, Greece — we're easy to find and always ready to welcome you.",
@@ -58,7 +58,7 @@ const TFT_TRANSLATIONS = {
     "contact.available":"Διαθέσιμοι Τώρα","contact.infoTitle":"Επικοινώνησε","contact.infoDesc":"Παρέχουμε αριστεία. Επικοινώνησε σήμερα και αφήσε σε μας τις ανάγκες παράδοσής σου.",
     "contact.lblAddress":"Διεύθυνση","contact.lblPhone":"Τηλέφωνο","contact.lblEmail":"Email","contact.lblHours":"Ώρες λειτουργίας",
     "form.title":"Στείλε μας μήνυμα","form.desc":"Συμπλήρωσε τη φόρμα και η ομάδα μας θα επικοινωνήσει εντός 24 ωρών.",
-    "form.name":"Ονοματεπώνυμο *","form.email":"Email *","form.phone":"Τηλέφωνο","form.subject":"Θέμα","form.message":"Μήνυμα *","form.messagePh":"Πες μας για σένα ή το αίτημά σου...","form.send":"Αποστολή","form.success":"Ευχαριστούμε! Το μήνυμά σας στάλθηκε επιτυχώς.",
+    "form.name":"Ονοματεπώνυμο *","form.email":"Email *","form.phone":"Τηλέφωνο","form.subject":"Θέμα","form.message":"Μήνυμα *","form.messagePh":"Πες μας για σένα ή το αίτημά σου...","form.openBtn":"Άνοιγμα Φόρμας","form.send":"Αποστολή","form.success":"Ευχαριστούμε! Το μήνυμά σας στάλθηκε επιτυχώς.",
     "footer.desc":"Όπου η ταχεία παράδοση συναντά τις σύγχρονες ανάγκες.<br>Αξιόπιστη παράδοση σε Ελλάδα και Κύπρο.",
     "settings.title":"Ρυθμίσεις","settings.lang":"Γλώσσα",
     "map.eyebrow":"Η Τοποθεσία μας","map.title":"Βρες μας στον χάρτη","map.desc":"Επισκέψου τα γραφεία μας στην Αθήνα — είμαστε εύκολα προσβάσιμοι και πάντα έτοιμοι να σε υποδεχθούμε.",
@@ -89,7 +89,7 @@ const TFT_TRANSLATIONS = {
     "contact.available":"متاحون الآن","contact.infoTitle":"تواصل معنا","contact.infoDesc":"نقدم التميز. تواصل معنا اليوم ودعنا نتولى احتياجات التوصيل الخاصة بك.",
     "contact.lblAddress":"العنوان","contact.lblPhone":"الهاتف","contact.lblEmail":"البريد الإلكتروني","contact.lblHours":"ساعات العمل",
     "form.title":"أرسل لنا رسالة","form.desc":"املأ النموذج أدناه وسيتواصل معك فريقنا خلال 24 ساعة.",
-    "form.name":"الاسم الكامل *","form.email":"البريد الإلكتروني *","form.phone":"الهاتف","form.subject":"الموضوع","form.message":"الرسالة *","form.messagePh":"أخبرنا عن نفسك أو استفسارك...","form.send":"إرسال الرسالة","form.success":"شكراً لك! تم إرسال رسالتك بنجاح.",
+    "form.name":"الاسم الكامل *","form.email":"البريد الإلكتروني *","form.phone":"الهاتف","form.subject":"الموضوع","form.message":"الرسالة *","form.messagePh":"أخبرنا عن نفسك أو استفسارك...","form.openBtn":"فتح نموذج الرسالة","form.send":"إرسال الرسالة","form.success":"شكراً لك! تم إرسال رسالتك بنجاح.",
     "footer.desc":"حيث يلتقي التوصيل السريع باحتياجات اليوم.<br>توصيل موثوق في نفس اليوم وللطرود ومن الباب إلى الباب في اليونان وقبرص.",
     "settings.title":"الإعدادات","settings.lang":"اللغة",
     "map.eyebrow":"موقعنا","map.title":"اعثر علينا على الخريطة","map.desc":"قم بزيارة مقرنا الرئيسي في أثينا، اليونان — يسهل العثور علينا ونحن دائماً جاهزون للترحيب بك.",
@@ -120,7 +120,7 @@ const TFT_TRANSLATIONS = {
     "contact.available":"اکنون در دسترس","contact.infoTitle":"در تماس باشید","contact.infoDesc":"ارائه‌دهنده تعالی. همین امروز تماس بگیرید و نیازهای تحویل خود را به ما بسپارید.",
     "contact.lblAddress":"آدرس","contact.lblPhone":"تلفن","contact.lblEmail":"ایمیل","contact.lblHours":"ساعات کاری",
     "form.title":"برای ما پیام بفرستید","form.desc":"فرم زیر را پر کنید؛ تیم ما ظرف ۲۴ ساعت پاسخ خواهد داد.",
-    "form.name":"نام کامل *","form.email":"ایمیل *","form.phone":"تلفن","form.subject":"موضوع","form.message":"پیام *","form.messagePh":"درباره خود یا درخواستتان به ما بگویید...","form.send":"ارسال پیام","form.success":"متشکریم! پیام شما با موفقیت ارسال شد.",
+    "form.name":"نام کامل *","form.email":"ایمیل *","form.phone":"تلفن","form.subject":"موضوع","form.message":"پیام *","form.messagePh":"درباره خود یا درخواستتان به ما بگویید...","form.openBtn":"باز کردن فرم پیام","form.send":"ارسال پیام","form.success":"متشکریم! پیام شما با موفقیت ارسال شد.",
     "footer.desc":"جایی که تحویل سریع با نیاز امروز ملاقات می‌کند.<br>تحویل قابل اعتماد در سراسر یونان و قبرس.",
     "settings.title":"تنظیمات","settings.lang":"زبان",
     "map.eyebrow":"موقعیت ما","map.title":"ما را روی نقشه پیدا کنید","map.desc":"از دفتر مرکزی ما در آتن، یونان دیدن کنید — یافتن ما آسان است و همیشه آماده استقبال از شما هستیم.",
@@ -151,7 +151,7 @@ const TFT_TRANSLATIONS = {
     "contact.available":"ابھی دستیاب","contact.infoTitle":"رابطہ کریں","contact.infoDesc":"عمدگی کی فراہمی۔ آج ہی رابطہ کریں اور اپنی ڈلیوری ضروریات ہم پر چھوڑ دیں۔",
     "contact.lblAddress":"پتہ","contact.lblPhone":"فون","contact.lblEmail":"ای میل","contact.lblHours":"اوقات کار",
     "form.title":"ہمیں پیغام بھیجیں","form.desc":"نیچے فارم پُر کریں اور ہماری ٹیم 24 گھنٹوں میں رابطہ کرے گی۔",
-    "form.name":"پورا نام *","form.email":"ای میل *","form.phone":"فون","form.subject":"موضوع","form.message":"پیغام *","form.messagePh":"اپنے بارے میں یا اپنے سوال کے بارے میں بتائیں...","form.send":"پیغام بھیجیں","form.success":"شکریہ! آپ کا پیغام کامیابی سے بھیج دیا گیا ہے۔",
+    "form.name":"پورا نام *","form.email":"ای میل *","form.phone":"فون","form.subject":"موضوع","form.message":"پیغام *","form.messagePh":"اپنے بارے میں یا اپنے سوال کے بارے میں بتائیں...","form.openBtn":"پیغام فارم کھولیں","form.send":"پیغام بھیجیں","form.success":"شکریہ! آپ کا پیغام کامیابی سے بھیج دیا گیا ہے۔",
     "footer.desc":"جہاں فوری ڈلیوری آج کی ضرورت سے ملتی ہے۔<br>یونان اور قبرص میں قابل اعتماد ڈلیوری۔",
     "settings.title":"ترتیبات","settings.lang":"زبان",
     "map.eyebrow":"ہمارا مقام","map.title":"نقشے پر ہمیں تلاش کریں","map.desc":"ایتھنز، یونان میں ہمارے ہیڈکوارٹر کا دورہ کریں — ہمیں تلاش کرنا آسان ہے اور ہم ہمیشہ آپ کا استقبال کرنے کے لیے تیار ہیں۔",
@@ -182,7 +182,7 @@ const TFT_TRANSLATIONS = {
     "contact.available":"Disponible Ahora","contact.infoTitle":"Ponte en Contacto","contact.infoDesc":"Entregando excelencia. Contáctanos hoy y deja que gestionemos tus necesidades de entrega.",
     "contact.lblAddress":"Dirección","contact.lblPhone":"Teléfono","contact.lblEmail":"Email","contact.lblHours":"Horario",
     "form.title":"Envíanos un Mensaje","form.desc":"Rellena el formulario y nuestro equipo te contactará en 24 horas.",
-    "form.name":"Nombre Completo *","form.email":"Email *","form.phone":"Teléfono","form.subject":"Asunto","form.message":"Mensaje *","form.messagePh":"Cuéntanos sobre ti o tu consulta...","form.send":"Enviar Mensaje","form.success":"¡Gracias! Tu mensaje se ha enviado correctamente.",
+    "form.name":"Nombre Completo *","form.email":"Email *","form.phone":"Teléfono","form.subject":"Asunto","form.message":"Mensaje *","form.messagePh":"Cuéntanos sobre ti o tu consulta...","form.openBtn":"Abrir Formulario","form.send":"Enviar Mensaje","form.success":"¡Gracias! Tu mensaje se ha enviado correctamente.",
     "footer.desc":"Donde la entrega rápida se encuentra con la necesidad de hoy.<br>Entrega fiable en Grecia y Chipre.",
     "settings.title":"Configuración","settings.lang":"Idioma",
     "map.eyebrow":"Nuestra Ubicación","map.title":"Encuéntranos en el mapa","map.desc":"Visita nuestra sede en Atenas, Grecia — somos fáciles de encontrar y siempre listos para recibirte.",
@@ -213,7 +213,7 @@ const TFT_TRANSLATIONS = {
     "contact.available":"Disponible Maintenant","contact.infoTitle":"Contactez-nous","contact.infoDesc":"L'excellence livrée. Contactez-nous aujourd'hui et laissez-nous gérer vos besoins de livraison.",
     "contact.lblAddress":"Adresse","contact.lblPhone":"Téléphone","contact.lblEmail":"Email","contact.lblHours":"Horaires",
     "form.title":"Envoyez-nous un Message","form.desc":"Remplissez le formulaire et notre équipe vous répondra sous 24 heures.",
-    "form.name":"Nom Complet *","form.email":"Email *","form.phone":"Téléphone","form.subject":"Sujet","form.message":"Message *","form.messagePh":"Parlez-nous de vous ou de votre demande...","form.send":"Envoyer","form.success":"Merci ! Votre message a été envoyé avec succès.",
+    "form.name":"Nom Complet *","form.email":"Email *","form.phone":"Téléphone","form.subject":"Sujet","form.message":"Message *","form.messagePh":"Parlez-nous de vous ou de votre demande...","form.openBtn":"Ouvrir le Formulaire","form.send":"Envoyer","form.success":"Merci ! Votre message a été envoyé avec succès.",
     "footer.desc":"Où la livraison rapide rencontre les besoins d'aujourd'hui.<br>Livraison fiable en Grèce et à Chypre.",
     "settings.title":"Paramètres","settings.lang":"Langue",
     "map.eyebrow":"Notre Emplacement","map.title":"Trouvez-nous sur la carte","map.desc":"Visitez notre siège à Athènes, en Grèce — facile à trouver et toujours prêts à vous accueillir.",
@@ -244,7 +244,7 @@ const TFT_TRANSLATIONS = {
     "contact.available":"Jetzt verfügbar","contact.infoTitle":"Kontaktiere uns","contact.infoDesc":"Exzellenz geliefert. Kontaktiere uns heute und lass uns deine Lieferbedürfnisse erfüllen.",
     "contact.lblAddress":"Adresse","contact.lblPhone":"Telefon","contact.lblEmail":"E-Mail","contact.lblHours":"Arbeitszeiten",
     "form.title":"Sende uns eine Nachricht","form.desc":"Fülle das Formular aus und unser Team meldet sich innerhalb von 24 Stunden.",
-    "form.name":"Vollständiger Name *","form.email":"E-Mail *","form.phone":"Telefon","form.subject":"Betreff","form.message":"Nachricht *","form.messagePh":"Erzähl uns von dir oder deiner Anfrage...","form.send":"Nachricht senden","form.success":"Vielen Dank! Deine Nachricht wurde erfolgreich gesendet.",
+    "form.name":"Vollständiger Name *","form.email":"E-Mail *","form.phone":"Telefon","form.subject":"Betreff","form.message":"Nachricht *","form.messagePh":"Erzähl uns von dir oder deiner Anfrage...","form.openBtn":"Formular öffnen","form.send":"Nachricht senden","form.success":"Vielen Dank! Deine Nachricht wurde erfolgreich gesendet.",
     "footer.desc":"Wo schnelle Lieferung auf den heutigen Bedarf trifft.<br>Zuverlässige Lieferung in Griechenland und Zypern.",
     "settings.title":"Einstellungen","settings.lang":"Sprache",
     "map.eyebrow":"Unser Standort","map.title":"Finde uns auf der Karte","map.desc":"Besuche unser Hauptquartier in Athen, Griechenland — wir sind leicht zu finden und freuen uns immer auf dich.",
@@ -275,7 +275,7 @@ const TFT_TRANSLATIONS = {
     "contact.available":"Disponibile Ora","contact.infoTitle":"Mettiti in Contatto","contact.infoDesc":"Eccellenza consegnata. Contattaci oggi e lasciaci gestire le tue esigenze di consegna.",
     "contact.lblAddress":"Indirizzo","contact.lblPhone":"Telefono","contact.lblEmail":"Email","contact.lblHours":"Orari di lavoro",
     "form.title":"Inviaci un Messaggio","form.desc":"Compila il modulo e il nostro team ti risponderà entro 24 ore.",
-    "form.name":"Nome Completo *","form.email":"Email *","form.phone":"Telefono","form.subject":"Oggetto","form.message":"Messaggio *","form.messagePh":"Parlaci di te o della tua richiesta...","form.send":"Invia Messaggio","form.success":"Grazie! Il tuo messaggio è stato inviato con successo.",
+    "form.name":"Nome Completo *","form.email":"Email *","form.phone":"Telefono","form.subject":"Oggetto","form.message":"Messaggio *","form.messagePh":"Parlaci di te o della tua richiesta...","form.openBtn":"Apri il Modulo","form.send":"Invia Messaggio","form.success":"Grazie! Il tuo messaggio è stato inviato con successo.",
     "footer.desc":"Dove la consegna rapida incontra le esigenze di oggi.<br>Consegna affidabile in Grecia e Cipro.",
     "settings.title":"Impostazioni","settings.lang":"Lingua",
     "map.eyebrow":"La Nostra Posizione","map.title":"Trovaci sulla mappa","map.desc":"Visita la nostra sede ad Atene, in Grecia — siamo facili da trovare e sempre pronti ad accoglierti.",
@@ -366,6 +366,33 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         alert('Please fill in all required fields.');
       }
+    });
+  }
+
+  // Contact modal (CTA button opens popup form)
+  const contactModal = document.getElementById('contactModal');
+  const openContactBtn = document.getElementById('openContactForm');
+  function openContactModal(){
+    if (!contactModal) return;
+    contactModal.classList.add('open');
+    contactModal.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+    const firstInput = contactModal.querySelector('input[name="name"]');
+    if (firstInput) setTimeout(() => firstInput.focus(), 200);
+  }
+  function closeContactModal(){
+    if (!contactModal) return;
+    contactModal.classList.remove('open');
+    contactModal.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+  if (openContactBtn && contactModal) {
+    openContactBtn.addEventListener('click', openContactModal);
+    contactModal.querySelectorAll('[data-close]').forEach(el =>
+      el.addEventListener('click', closeContactModal)
+    );
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && contactModal.classList.contains('open')) closeContactModal();
     });
   }
 

@@ -238,32 +238,54 @@
         <h3 data-i18n="contact.infoTitle">Get in Touch</h3>
         <p data-i18n="contact.infoDesc">Delivering Excellence. Get in touch today and let us handle your delivery needs across Greece and Cyprus.</p>
         <hr>
-        <div class="contact-item">
-          <i class="fas fa-location-dot"></i>
-          <div><p data-i18n="contact.lblAddress">Address</p><p>Fillipou Plita 9, 11476, Athens</p></div>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-phone"></i>
-          <div><p data-i18n="contact.lblPhone">Phone</p><p><a href="tel:+306931206074">+30 693 120 6074</a></p><p><a href="tel:+302106428703">+30 210 642 8703</a></p></div>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <div><p data-i18n="contact.lblEmail">Email</p><p><a href="mailto:tft@tftinfo.net">tft@tftinfo.net</a></p></div>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-clock"></i>
-          <div><p data-i18n="contact.lblHours">Working Hours</p><p data-i18n="business.hoursWeek">Mon - Fri: 11am - 7pm</p></div>
+        <div class="contact-info-items">
+          <div class="contact-item">
+            <i class="fas fa-location-dot"></i>
+            <div><p data-i18n="contact.lblAddress">Address</p><p>Fillipou Plita 9, 11476, Athens</p></div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div><p data-i18n="contact.lblPhone">Phone</p><p><a href="tel:+306931206074">+30 693 120 6074</a></p><p><a href="tel:+302106428703">+30 210 642 8703</a></p></div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div><p data-i18n="contact.lblEmail">Email</p><p><a href="mailto:tft@tftinfo.net">tft@tftinfo.net</a></p></div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div><p data-i18n="contact.lblHours">Working Hours</p><p data-i18n="business.hoursWeek">Mon - Fri: 11am - 7pm</p></div>
+          </div>
         </div>
       </div>
 
-      <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/tft@tftinfo.net" method="POST" novalidate>
+      <div class="contact-cta reveal">
+        <div class="contact-cta-icon"><i class="fas fa-paper-plane"></i></div>
+        <h3 data-i18n="form.title">Send Us a Message</h3>
+        <p data-i18n="form.desc">Fill out the form below and our team will reach out within 24 hours.</p>
+        <button type="button" class="btn btn-primary contact-cta-btn" id="openContactForm">
+          <span data-i18n="form.openBtn">Open Message Form</span> <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form Modal -->
+<div class="contact-modal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle" aria-hidden="true">
+  <div class="contact-modal-overlay" data-close></div>
+  <div class="contact-modal-panel" role="document">
+    <div class="contact-modal-header">
+      <h3 id="contactModalTitle"><i class="fas fa-paper-plane"></i> <span data-i18n="form.title">Send Us a Message</span></h3>
+      <button class="contact-modal-close" data-close aria-label="Close"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div class="contact-modal-body">
+      <form id="contactForm" action="https://formsubmit.co/tft@tftinfo.net" method="POST" novalidate>
         <input type="hidden" name="_subject" value="New Contact from TFT Website">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
         <input type="text" name="_honey" style="display:none">
 
-        <h3 data-i18n="form.title">Send Us a Message</h3>
-        <p data-i18n="form.desc">Fill out the form below and our team will reach out within 24 hours.</p>
+        <p class="contact-modal-desc" data-i18n="form.desc">Fill out the form below and our team will reach out within 24 hours.</p>
         <div class="form-row">
           <div class="form-group">
             <label for="name" data-i18n="form.name">Full Name *</label>
@@ -293,7 +315,7 @@
       </form>
     </div>
   </div>
-</section>
+</div>
 
 <!-- Map -->
 <section class="map-section" id="location">
