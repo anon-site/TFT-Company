@@ -3,7 +3,13 @@
 // ===== i18n translations =====
 const TFT_TRANSLATIONS = {
   en: {
-    "nav.home":"Home","nav.about":"About","nav.work":"Our Work","nav.services":"Services","nav.team":"Team","nav.details":"Details","nav.join":"Join Our Team",
+    "nav.home":"Home","nav.about":"About","nav.work":"Our Work","nav.services":"Services","nav.team":"Team","nav.details":"Coverage","nav.join":"Join Our Team",
+    "ops.eyebrow":"Where We Operate","ops.title":"Two Countries. Countless Streets.","ops.desc":"From the bustling boulevards of Athens to the sun-lit coasts of Cyprus — we deliver where it matters most.",
+    "ops.gr.name":"Greece","ops.gr.tag":"Mainland & islands coverage","ops.cy.name":"Cyprus","ops.cy.tag":"Serving the island's major hubs",
+    "ops.f1.t":"Wide Coverage","ops.f1.d":"10+ cities across two countries.",
+    "ops.f2.t":"Fast Dispatch","ops.f2.d":"Riders ready in minutes.",
+    "ops.f3.t":"Insured Fleet","ops.f3.d":"Every parcel protected end-to-end.",
+    "ops.f4.t":"Multilingual Support","ops.f4.d":"EN · EL · AR and more.",
     "hero.badge":"Trusted Across Greece & Cyprus","hero.title":"TFT Company","hero.subtitle":"Where Prompt Delivery Meets Today's Need",
     "hero.desc":"Delivering Excellence. Apply now for a delivery role and join our dedicated team serving communities across Greece and Cyprus.",
     "hero.btnJoin":"Join Our Team","hero.btnServices":"Our Services",
@@ -34,7 +40,13 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"We use cookies","cookie.desc":"We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking \"Accept\", you consent to our use of cookies.","cookie.accept":"Accept All","cookie.decline":"Decline"
   },
   el: {
-    "nav.home":"Αρχική","nav.about":"Σχετικά","nav.work":"Έργα μας","nav.services":"Υπηρεσίες","nav.team":"Ομάδα","nav.details":"Στοιχεία","nav.join":"Γίνε μέλος",
+    "nav.home":"Αρχική","nav.about":"Σχετικά","nav.work":"Έργα μας","nav.services":"Υπηρεσίες","nav.team":"Ομάδα","nav.details":"Κάλυψη","nav.join":"Γίνε μέλος",
+    "ops.eyebrow":"Πού Δραστηριοποιούμαστε","ops.title":"Δύο Χώρες. Αμέτρητοι Δρόμοι.","ops.desc":"Από τους ζωντανούς δρόμους της Αθήνας μέχρι τις ηλιόλουστες ακτές της Κύπρου — παραδίδουμε εκεί που έχει σημασία.",
+    "ops.gr.name":"Ελλάδα","ops.gr.tag":"Κάλυψη ηπειρωτικής και νησιών","ops.cy.name":"Κύπρος","ops.cy.tag":"Εξυπηρετούμε τα μεγάλα κέντρα του νησιού",
+    "ops.f1.t":"Ευρεία Κάλυψη","ops.f1.d":"10+ πόλεις σε δύο χώρες.",
+    "ops.f2.t":"Γρήγορη Αποστολή","ops.f2.d":"Οι οδηγοί έτοιμοι σε λεπτά.",
+    "ops.f3.t":"Ασφαλισμένος Στόλος","ops.f3.d":"Κάθε δέμα προστατευμένο από άκρο σε άκρο.",
+    "ops.f4.t":"Πολύγλωσση Υποστήριξη","ops.f4.d":"EN · EL · AR και άλλες.",
     "hero.badge":"Αξιόπιστοι σε Ελλάδα & Κύπρο","hero.title":"TFT Company","hero.subtitle":"Όπου η ταχεία παράδοση συναντά τις σύγχρονες ανάγκες",
     "hero.desc":"Παρέχουμε αριστεία. Κάνε αίτηση για θέση οδηγού και γίνε μέλος της αφοσιωμένης ομάδας μας σε Ελλάδα και Κύπρο.",
     "hero.btnJoin":"Γίνε μέλος","hero.btnServices":"Οι Υπηρεσίες μας",
@@ -65,7 +77,13 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"Χρησιμοποιούμε cookies","cookie.desc":"Χρησιμοποιούμε cookies για να βελτιώσουμε την εμπειρία περιήγησης και να εξατομικεύσουμε το περιεχόμενο.","cookie.accept":"Αποδοχή όλων","cookie.decline":"Απόρριψη"
   },
   ar: {
-    "nav.home":"الرئيسية","nav.about":"من نحن","nav.work":"أعمالنا","nav.services":"الخدمات","nav.team":"الفريق","nav.details":"التفاصيل","nav.join":"انضم إلى فريقنا",
+    "nav.home":"الرئيسية","nav.about":"من نحن","nav.work":"أعمالنا","nav.services":"الخدمات","nav.team":"الفريق","nav.details":"التغطية","nav.join":"انضم إلى فريقنا",
+    "ops.eyebrow":"أين نعمل","ops.title":"دولتان. شوارع لا تعد ولا تحصى.","ops.desc":"من شوارع أثينا النابضة إلى سواحل قبرص المشمسة — نوصل حيث يهم الأمر.",
+    "ops.gr.name":"اليونان","ops.gr.tag":"تغطية البر الرئيسي والجزر","ops.cy.name":"قبرص","ops.cy.tag":"نخدم المراكز الرئيسية في الجزيرة",
+    "ops.f1.t":"تغطية واسعة","ops.f1.d":"أكثر من  10 مدن في دولتين.",
+    "ops.f2.t":"إرسال سريع","ops.f2.d":"السائقون جاهزون خلال دقائق.",
+    "ops.f3.t":"أسطول مؤمّن","ops.f3.d":"كل طرد محمي من البداية إلى النهاية.",
+    "ops.f4.t":"دعم متعدد اللغات","ops.f4.d":"الإنجليزية · اليونانية · العربية وأكثر.",
     "hero.badge":"موثوقون في اليونان وقبرص","hero.title":"شركة TFT","hero.subtitle":"حيث يلتقي التوصيل السريع باحتياجات اليوم",
     "hero.desc":"نقدم التميز. قدّم الآن للحصول على وظيفة توصيل وانضم إلى فريقنا المتفاني الذي يخدم المجتمعات في اليونان وقبرص.",
     "hero.btnJoin":"انضم إلى فريقنا","hero.btnServices":"خدماتنا",
@@ -96,7 +114,13 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"نستخدم ملفات تعريف الارتباط","cookie.desc":"نستخدم ملفات تعريف الارتباط لتعزيز تجربة التصفح وتحليل حركة الموقع وتخصيص المحتوى. بالنقر على «قبول»، فإنك توافق على استخدامنا لها.","cookie.accept":"قبول الكل","cookie.decline":"رفض"
   },
   fa: {
-    "nav.home":"خانه","nav.about":"درباره ما","nav.work":"کارهای ما","nav.services":"خدمات","nav.team":"تیم","nav.details":"جزئیات","nav.join":"به تیم ما بپیوندید",
+    "nav.home":"خانه","nav.about":"درباره ما","nav.work":"کارهای ما","nav.services":"خدمات","nav.team":"تیم","nav.details":"پوشش","nav.join":"به تیم ما بپیوندید",
+    "ops.eyebrow":"جایی که فعالیت می‌کنیم","ops.title":"دو کشور. خیابان‌های بی‌شمار.","ops.desc":"از خیابان‌های پررفت‌و‌آمد آتن تا سواحل آفتابی قبرس — هر جا که مهم باشد تحویل می‌دهیم.",
+    "ops.gr.name":"یونان","ops.gr.tag":"پوشش خاک اصلی و جزایر","ops.cy.name":"قبرس","ops.cy.tag":"خدمت‌رسانی به مراکز اصلی جزیره",
+    "ops.f1.t":"پوشش گسترده","ops.f1.d":"بیش از ۱۰ شهر در دو کشور.",
+    "ops.f2.t":"ارسال سریع","ops.f2.d":"پیک‌ها ظرف چند دقیقه آماده‌اند.",
+    "ops.f3.t":"ناوگان بیمه‌شده","ops.f3.d":"هر بسته از ابتدا تا انتها محافظت می‌شود.",
+    "ops.f4.t":"پشتیبانی چندزبانه","ops.f4.d":"انگلیسی · یونانی · عربی و بیشتر.",
     "hero.badge":"مورد اعتماد در یونان و قبرس","hero.title":"شرکت TFT","hero.subtitle":"جایی که تحویل سریع با نیاز امروز ملاقات می‌کند",
     "hero.desc":"ارائه‌دهنده تعالی. همین حالا برای موقعیت پیک درخواست دهید و به تیم متعهد ما در یونان و قبرس بپیوندید.",
     "hero.btnJoin":"به تیم ما بپیوندید","hero.btnServices":"خدمات ما",
@@ -127,7 +151,13 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"ما از کوکی استفاده می‌کنیم","cookie.desc":"ما از کوکی‌ها برای بهبود تجربه مرور، تحلیل ترافیک و شخصی‌سازی محتوا استفاده می‌کنیم.","cookie.accept":"پذیرش همه","cookie.decline":"رد کردن"
   },
   ur: {
-    "nav.home":"ہوم","nav.about":"ہمارے بارے میں","nav.work":"ہمارا کام","nav.services":"خدمات","nav.team":"ٹیم","nav.details":"تفصیلات","nav.join":"ہماری ٹیم میں شامل ہوں",
+    "nav.home":"ہوم","nav.about":"ہمارے بارے میں","nav.work":"ہمارا کام","nav.services":"خدمات","nav.team":"ٹیم","nav.details":"کوریج","nav.join":"ہماری ٹیم میں شامل ہوں",
+    "ops.eyebrow":"ہم کہاں کام کرتے ہیں","ops.title":"دو ممالک۔ بے شمار گلیاں۔","ops.desc":"ایتھنز کی مصروف سڑکوں سے لے کر قبرص کے دھوپ بھرے ساحلوں تک — جہاں ضرورت ہو ہم دیلیوری کرتے ہیں۔",
+    "ops.gr.name":"یونان","ops.gr.tag":"مرکزی علاقے اور جزائر کی کوریج","ops.cy.name":"قبرص","ops.cy.tag":"جزیرے کے اہم مراکز کی خدمت",
+    "ops.f1.t":"وسیع کوریج","ops.f1.d":"دو ممالک میں 10+ شہر.",
+    "ops.f2.t":"تیز دسپیچ","ops.f2.d":"رائڈرز چند منٹ میں تیار.",
+    "ops.f3.t":"بیمہ شدہ بیڑا","ops.f3.d":"ہر پارسل شروع سے آخر تک محفوظ.",
+    "ops.f4.t":"کئی زبانوں میں سپورٹ","ops.f4.d":"انگریزی · یونانی · عربی اور بھی۔",
     "hero.badge":"یونان اور قبرص میں قابل اعتماد","hero.title":"TFT کمپنی","hero.subtitle":"جہاں فوری ڈلیوری آج کی ضرورت سے ملتی ہے",
     "hero.desc":"عمدگی کی فراہمی۔ ابھی ڈلیوری کے کردار کے لیے درخواست دیں اور یونان اور قبرص میں ہماری وقف ٹیم میں شامل ہوں۔",
     "hero.btnJoin":"ہماری ٹیم میں شامل ہوں","hero.btnServices":"ہماری خدمات",
@@ -158,7 +188,13 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"ہم کوکیز استعمال کرتے ہیں","cookie.desc":"ہم آپ کے براؤزنگ تجربے کو بہتر بنانے، ٹریفک کا تجزیہ کرنے اور مواد کو ذاتی بنانے کے لیے کوکیز استعمال کرتے ہیں۔","cookie.accept":"سب قبول کریں","cookie.decline":"مسترد کریں"
   },
   es: {
-    "nav.home":"Inicio","nav.about":"Acerca","nav.work":"Nuestro Trabajo","nav.services":"Servicios","nav.team":"Equipo","nav.details":"Detalles","nav.join":"Únete a Nuestro Equipo",
+    "nav.home":"Inicio","nav.about":"Acerca","nav.work":"Nuestro Trabajo","nav.services":"Servicios","nav.team":"Equipo","nav.details":"Cobertura","nav.join":"Únete a Nuestro Equipo",
+    "ops.eyebrow":"Dónde Operamos","ops.title":"Dos Países. Calles Sin Fin.","ops.desc":"Desde las animadas avenidas de Atenas hasta las costas soleadas de Chipre — entregamos donde más importa.",
+    "ops.gr.name":"Grecia","ops.gr.tag":"Cobertura continental e insular","ops.cy.name":"Chipre","ops.cy.tag":"Servimos los principales centros de la isla",
+    "ops.f1.t":"Amplia Cobertura","ops.f1.d":"Más de 10 ciudades en dos países.",
+    "ops.f2.t":"Envío Rápido","ops.f2.d":"Repartidores listos en minutos.",
+    "ops.f3.t":"Flota Asegurada","ops.f3.d":"Cada paquete protegido de extremo a extremo.",
+    "ops.f4.t":"Soporte Multilingüe","ops.f4.d":"EN · EL · AR y más.",
     "hero.badge":"De confianza en Grecia y Chipre","hero.title":"TFT Company","hero.subtitle":"Donde la entrega rápida se encuentra con la necesidad de hoy",
     "hero.desc":"Entregando excelencia. Solicita ahora un puesto de repartidor y únete a nuestro equipo dedicado en Grecia y Chipre.",
     "hero.btnJoin":"Únete a Nuestro Equipo","hero.btnServices":"Nuestros Servicios",
@@ -189,7 +225,13 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"Usamos cookies","cookie.desc":"Utilizamos cookies para mejorar tu experiencia de navegación, analizar el tráfico y personalizar el contenido.","cookie.accept":"Aceptar Todo","cookie.decline":"Rechazar"
   },
   fr: {
-    "nav.home":"Accueil","nav.about":"À propos","nav.work":"Nos Travaux","nav.services":"Services","nav.team":"Équipe","nav.details":"Détails","nav.join":"Rejoignez-nous",
+    "nav.home":"Accueil","nav.about":"À propos","nav.work":"Nos Travaux","nav.services":"Services","nav.team":"Équipe","nav.details":"Couverture","nav.join":"Rejoignez-nous",
+    "ops.eyebrow":"Où Nous Opérons","ops.title":"Deux Pays. D'innombrables Rues.","ops.desc":"Des boulevards animés d'Athènes aux côtes ensoleillées de Chypre — nous livrons là où ça compte.",
+    "ops.gr.name":"Grèce","ops.gr.tag":"Couverture du continent et des îles","ops.cy.name":"Chypre","ops.cy.tag":"Au service des principaux centres de l'île",
+    "ops.f1.t":"Large Couverture","ops.f1.d":"Plus de 10 villes dans deux pays.",
+    "ops.f2.t":"Envoi Rapide","ops.f2.d":"Livreurs prêts en quelques minutes.",
+    "ops.f3.t":"Flotte Assurée","ops.f3.d":"Chaque colis protégé de bout en bout.",
+    "ops.f4.t":"Support Multilingue","ops.f4.d":"EN · EL · AR et plus.",
     "hero.badge":"De confiance en Grèce et à Chypre","hero.title":"TFT Company","hero.subtitle":"Où la livraison rapide rencontre les besoins d'aujourd'hui",
     "hero.desc":"L'excellence livrée. Postulez dès maintenant pour un poste de livreur et rejoignez notre équipe dévouée en Grèce et à Chypre.",
     "hero.btnJoin":"Rejoignez-nous","hero.btnServices":"Nos Services",
@@ -220,7 +262,13 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"Nous utilisons des cookies","cookie.desc":"Nous utilisons des cookies pour améliorer votre expérience de navigation, analyser le trafic et personnaliser le contenu.","cookie.accept":"Tout Accepter","cookie.decline":"Refuser"
   },
   de: {
-    "nav.home":"Start","nav.about":"Über uns","nav.work":"Unsere Arbeit","nav.services":"Leistungen","nav.team":"Team","nav.details":"Details","nav.join":"Werde Teil des Teams",
+    "nav.home":"Start","nav.about":"Über uns","nav.work":"Unsere Arbeit","nav.services":"Leistungen","nav.team":"Team","nav.details":"Abdeckung","nav.join":"Werde Teil des Teams",
+    "ops.eyebrow":"Wo wir tätig sind","ops.title":"Zwei Länder. Unzählige Straßen.","ops.desc":"Von den lebhaften Boulevards Athens bis zu den sonnigen Küsten Zyperns — wir liefern dort, wo es zählt.",
+    "ops.gr.name":"Griechenland","ops.gr.tag":"Festland & Inseln Abdeckung","ops.cy.name":"Zypern","ops.cy.tag":"Wir bedienen die wichtigsten Zentren der Insel",
+    "ops.f1.t":"Breite Abdeckung","ops.f1.d":"Über 10 Städte in zwei Ländern.",
+    "ops.f2.t":"Schneller Versand","ops.f2.d":"Fahrer in Minuten bereit.",
+    "ops.f3.t":"Versicherte Flotte","ops.f3.d":"Jedes Paket durchgängig geschützt.",
+    "ops.f4.t":"Mehrsprachiger Support","ops.f4.d":"EN · EL · AR und mehr.",
     "hero.badge":"Vertrauenswürdig in Griechenland & Zypern","hero.title":"TFT Company","hero.subtitle":"Wo schnelle Lieferung auf den heutigen Bedarf trifft",
     "hero.desc":"Exzellenz geliefert. Bewirb dich jetzt für eine Lieferposition und werde Teil unseres engagierten Teams.",
     "hero.btnJoin":"Werde Teil des Teams","hero.btnServices":"Unsere Leistungen",
@@ -251,7 +299,13 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"Wir verwenden Cookies","cookie.desc":"Wir verwenden Cookies, um dein Surferlebnis zu verbessern, den Verkehr zu analysieren und Inhalte zu personalisieren.","cookie.accept":"Alle akzeptieren","cookie.decline":"Ablehnen"
   },
   it: {
-    "nav.home":"Home","nav.about":"Chi siamo","nav.work":"I nostri lavori","nav.services":"Servizi","nav.team":"Team","nav.details":"Dettagli","nav.join":"Unisciti al Team",
+    "nav.home":"Home","nav.about":"Chi siamo","nav.work":"I nostri lavori","nav.services":"Servizi","nav.team":"Team","nav.details":"Copertura","nav.join":"Unisciti al Team",
+    "ops.eyebrow":"Dove Operiamo","ops.title":"Due Paesi. Strade Infinite.","ops.desc":"Dai vivaci viali di Atene alle coste soleggiate di Cipro — consegniamo dove conta di più.",
+    "ops.gr.name":"Grecia","ops.gr.tag":"Copertura continentale e isole","ops.cy.name":"Cipro","ops.cy.tag":"Serviamo i principali centri dell'isola",
+    "ops.f1.t":"Ampia Copertura","ops.f1.d":"Oltre 10 città in due paesi.",
+    "ops.f2.t":"Spedizione Rapida","ops.f2.d":"Rider pronti in pochi minuti.",
+    "ops.f3.t":"Flotta Assicurata","ops.f3.d":"Ogni pacco protetto dall'inizio alla fine.",
+    "ops.f4.t":"Supporto Multilingue","ops.f4.d":"EN · EL · AR e altre.",
     "hero.badge":"Affidabili in Grecia e Cipro","hero.title":"TFT Company","hero.subtitle":"Dove la consegna rapida incontra le esigenze di oggi",
     "hero.desc":"Eccellenza consegnata. Candidati ora per un ruolo di consegna e unisciti al nostro team in Grecia e Cipro.",
     "hero.btnJoin":"Unisciti al Team","hero.btnServices":"I Nostri Servizi",
@@ -391,9 +445,6 @@ document.addEventListener('DOMContentLoaded', () => {
     contactModal.querySelectorAll('[data-close]').forEach(el =>
       el.addEventListener('click', closeContactModal)
     );
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape' && contactModal.classList.contains('open')) closeContactModal();
-    });
   }
 
   // Settings modal + language switcher
@@ -417,9 +468,6 @@ document.addEventListener('DOMContentLoaded', () => {
     settingsModal.querySelectorAll('[data-close]').forEach(el =>
       el.addEventListener('click', closeSettings)
     );
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape' && settingsModal.classList.contains('open')) closeSettings();
-    });
   }
   if (langGrid) {
     langGrid.addEventListener('click', e => {
