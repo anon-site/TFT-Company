@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>TFT Company</title>
-<meta name="description" content="TFT Company â€” Professional same-day, parcel, and door-to-door delivery services across Greece and Cyprus. Athens-based fleet of motorcycles, e-bikes & vans." />
+<title>TFT Company — Same-Day Delivery in Greece &amp; Cyprus</title>
+<meta name="description" content="TFT Company — Professional same-day, parcel, and door-to-door delivery services across Greece and Cyprus. Athens-based fleet of motorcycles, e-bikes &amp; vans." />
 <meta name="keywords" content="TFT Company, delivery Athens, delivery Greece, delivery Cyprus, same day delivery, parcel delivery, door to door, courier Greece" />
 <meta name="author" content="TFT Company" />
 <meta name="theme-color" content="#ff6b00" />
@@ -15,7 +15,7 @@
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="TFT Company â€” Where Prompt Delivery Meets Today's Need" />
+<meta property="og:title" content="TFT Company — Where Prompt Delivery Meets Today's Need" />
 <meta property="og:description" content="Professional delivery services across Greece and Cyprus. Same-day, parcel, and door-to-door delivery." />
 <meta property="og:image" content="img/efood-island-project_generic-banner-1.webp" />
 <meta property="og:url" content="https://tftinfo.net/" />
@@ -23,14 +23,16 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="TFT Company â€” Prompt Delivery" />
+<meta name="twitter:title" content="TFT Company — Prompt Delivery" />
 <meta name="twitter:description" content="Professional delivery services across Greece and Cyprus." />
 <meta name="twitter:image" content="img/efood-island-project_generic-banner-1.webp" />
 
 <link rel="preload" as="image" href="img/efood-island-project_generic-banner-1.webp" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800;900&family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&family=Vazirmatn:wght@400;500;600;700;800;900&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Core fonts (Latin + Greek via Poppins subset) -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<!-- Non-Latin script fonts are loaded on demand via tftLoadLangFont() in main.js when switching to ar/fa/ur -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
 <!-- Site stylesheet -->
@@ -72,6 +74,10 @@
   <div class="container nav-wrap">
     <a href="#home" class="logo"><i class="fas fa-truck-fast"></i> TFT<span> Company</span></a>
     <ul class="nav-links" id="navLinks">
+      <li class="nav-drawer-header" aria-hidden="true">
+        <span class="nav-drawer-title"><i class="fas fa-truck-fast"></i> <span data-i18n="nav.menuTitle">Menu</span></span>
+        <button type="button" class="nav-close" id="navClose" aria-label="Close menu"><i class="fas fa-xmark"></i></button>
+      </li>
       <li><a href="#home" data-i18n="nav.home">Home</a></li>
       <li><a href="#about" data-i18n="nav.about">About</a></li>
       <li><a href="#gallery" data-i18n="nav.work">Our Work</a></li>
@@ -115,7 +121,7 @@
         </div>
       </div>
       <div class="about-img reveal">
-        <img src="img/efood-1.webp" alt="TFT Delivery" loading="lazy">
+        <img src="img/efood-1.webp" alt="TFT Company delivery rider on the streets of Athens" loading="lazy" width="800" height="600">
       </div>
     </div>
   </div>
@@ -130,12 +136,12 @@
       <p data-i18n="gallery.desc">A look at our fleet, our riders, and the streets we serve every day.</p>
     </div>
     <div class="gallery-grid">
-      <div class="gallery-item reveal"><img src="img/1b6a987f1e314d489ccd4eb119de5e54.avif" alt="Delivery 1" loading="lazy"><span class="gallery-overlay" data-i18n="gallery.o1">On the Move</span></div>
-      <div class="gallery-item reveal"><img src="img/8da6d2_b107d937042640b883aeca9986ef9b26~mv2.avif" alt="Delivery 2" loading="lazy"><span class="gallery-overlay" data-i18n="gallery.o2">Ready to Ride</span></div>
-      <div class="gallery-item reveal"><img src="img/cfb1f8f03ec948f2a3eb4e46890195a3.avif" alt="Delivery 3" loading="lazy"><span class="gallery-overlay" data-i18n="gallery.o3">City Streets</span></div>
-      <div class="gallery-item reveal"><img src="img/8da6d2_d04bb001b123421784d74f3e9ad8a113~mv2.avif" alt="Delivery 4" loading="lazy"><span class="gallery-overlay" data-i18n="gallery.o4">Fast Service</span></div>
-      <div class="gallery-item reveal"><img src="img/675984878_122107134008847189_8457121091592709556_n.webp" alt="Delivery 5" loading="lazy"><span class="gallery-overlay" data-i18n="gallery.o5">Our Team</span></div>
-      <div class="gallery-item reveal"><img src="img/e64e64d2-ab86-49f4-bb51-34c8c3d0e463_Riders-landing-assets-3.webp" alt="Delivery 6" loading="lazy"><span class="gallery-overlay" data-i18n="gallery.o6">Riders First</span></div>
+      <div class="gallery-item reveal"><img src="img/1b6a987f1e314d489ccd4eb119de5e54.avif" alt="TFT delivery rider in motion on a busy street" loading="lazy"><span class="gallery-overlay" data-i18n="gallery.o1">On the Move</span></div>
+      <div class="gallery-item reveal"><img src="img/8da6d2_b107d937042640b883aeca9986ef9b26~mv2.avif" alt="TFT rider geared up and ready to start a delivery" loading="lazy"><span class="gallery-overlay" data-i18n="gallery.o2">Ready to Ride</span></div>
+      <div class="gallery-item reveal"><img src="img/cfb1f8f03ec948f2a3eb4e46890195a3.avif" alt="TFT motorcycle navigating Athens city streets" loading="lazy"><span class="gallery-overlay" data-i18n="gallery.o3">City Streets</span></div>
+      <div class="gallery-item reveal"><img src="img/8da6d2_d04bb001b123421784d74f3e9ad8a113~mv2.avif" alt="Fast same-day delivery service in action" loading="lazy"><span class="gallery-overlay" data-i18n="gallery.o4">Fast Service</span></div>
+      <div class="gallery-item reveal"><img src="img/675984878_122107134008847189_8457121091592709556_n.webp" alt="TFT Company delivery team posing together" loading="lazy"><span class="gallery-overlay" data-i18n="gallery.o5">Our Team</span></div>
+      <div class="gallery-item reveal"><img src="img/e64e64d2-ab86-49f4-bb51-34c8c3d0e463_Riders-landing-assets-3.webp" alt="TFT rider in branded uniform with a delivery bag" loading="lazy"><span class="gallery-overlay" data-i18n="gallery.o6">Riders First</span></div>
     </div>
   </div>
 </section>
@@ -173,7 +179,7 @@
   <div class="container">
     <div class="team-content">
       <div class="reveal">
-        <img src="img/e64e64d2-ab86-49f4-bb51-34c8c3d0e463_Riders-landing-assets-3.webp" alt="Our Team" loading="lazy">
+        <img src="img/e64e64d2-ab86-49f4-bb51-34c8c3d0e463_Riders-landing-assets-3.webp" alt="TFT Company team of professional delivery riders" loading="lazy" width="800" height="600">
       </div>
       <div class="team-text reveal">
         <span class="eyebrow" style="color:var(--primary);font-weight:600;letter-spacing:3px;text-transform:uppercase;font-size:.85rem;margin-bottom:12px;display:block" data-i18n="team.eyebrow">Our People</span>
@@ -203,7 +209,7 @@
     <div class="ops-countries">
       <div class="ops-country reveal">
         <div class="ops-country-head">
-          <span class="ops-flag" aria-hidden="true">🇬🇷</span>
+          <img class="ops-flag" src="https://flagcdn.com/w80/gr.png" srcset="https://flagcdn.com/w160/gr.png 2x" alt="" width="56" height="40" loading="lazy">
           <div>
             <h3 data-i18n="ops.gr.name">Greece</h3>
             <p data-i18n="ops.gr.tag">Mainland &amp; islands coverage</p>
@@ -221,7 +227,7 @@
 
       <div class="ops-country reveal">
         <div class="ops-country-head">
-          <span class="ops-flag" aria-hidden="true">🇨🇾</span>
+          <img class="ops-flag" src="https://flagcdn.com/w80/cy.png" srcset="https://flagcdn.com/w160/cy.png 2x" alt="" width="56" height="40" loading="lazy">
           <div>
             <h3 data-i18n="ops.cy.name">Cyprus</h3>
             <p data-i18n="ops.cy.tag">Serving the island's major hubs</p>
@@ -384,11 +390,12 @@
     <div class="footer-center">
       <a href="#home" class="logo"><i class="fas fa-truck-fast"></i> TFT<span> Company</span></a>
       <p data-i18n="footer.desc">Where Prompt Delivery Meets Today's Need.<br>Reliable same-day, parcel, and door-to-door delivery across Greece and Cyprus.</p>
+      <!-- Social links: replace href="#" with real URLs before going live -->
       <div class="socials">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="TFT Company on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="TFT Company on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="TFT Company on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="TFT Company on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
       </div>
     </div>
     <div class="copyright">
@@ -398,9 +405,6 @@
     </div>
   </div>
 </footer>
-
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/306931206074?text=Hello%20TFT%20Company%2C%20I%27d%20like%20to%20know%20more%20about%20your%20delivery%20services." target="_blank" rel="noopener" class="float-btn whatsapp-btn" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
 <!-- Floating Settings -->
 <button class="float-btn settings-btn" id="settingsBtn" aria-label="Settings" aria-haspopup="dialog" aria-controls="settingsModal"><i class="fas fa-gear"></i></button>
@@ -417,15 +421,15 @@
       <div class="settings-section">
         <label class="settings-label"><i class="fas fa-globe"></i> <span data-i18n="settings.lang">Language</span></label>
         <div class="lang-grid" id="langGrid">
-          <button type="button" class="lang-option" data-lang="en"><span class="flag">🇬🇧</span><span class="lang-name">English</span></button>
-          <button type="button" class="lang-option" data-lang="el"><span class="flag">🇬🇷</span><span class="lang-name">Ελληνικά</span></button>
-          <button type="button" class="lang-option" data-lang="ar"><span class="flag">🇸🇦</span><span class="lang-name">العربية</span></button>
-          <button type="button" class="lang-option" data-lang="fa"><span class="flag">🇮🇷</span><span class="lang-name">فارسی</span></button>
-          <button type="button" class="lang-option" data-lang="ur"><span class="flag">🇵🇰</span><span class="lang-name">اردو</span></button>
-          <button type="button" class="lang-option" data-lang="es"><span class="flag">🇪🇸</span><span class="lang-name">Español</span></button>
-          <button type="button" class="lang-option" data-lang="fr"><span class="flag">🇫🇷</span><span class="lang-name">Français</span></button>
-          <button type="button" class="lang-option" data-lang="de"><span class="flag">🇩🇪</span><span class="lang-name">Deutsch</span></button>
-          <button type="button" class="lang-option" data-lang="it"><span class="flag">🇮🇹</span><span class="lang-name">Italiano</span></button>
+          <button type="button" class="lang-option" data-lang="en"><img class="flag" src="https://flagcdn.com/w40/gb.png" srcset="https://flagcdn.com/w80/gb.png 2x" alt="" width="28" height="20" loading="lazy"><span class="lang-name">English</span></button>
+          <button type="button" class="lang-option" data-lang="el"><img class="flag" src="https://flagcdn.com/w40/gr.png" srcset="https://flagcdn.com/w80/gr.png 2x" alt="" width="28" height="20" loading="lazy"><span class="lang-name">Ελληνικά</span></button>
+          <button type="button" class="lang-option" data-lang="ar"><img class="flag" src="https://flagcdn.com/w40/sa.png" srcset="https://flagcdn.com/w80/sa.png 2x" alt="" width="28" height="20" loading="lazy"><span class="lang-name">العربية</span></button>
+          <button type="button" class="lang-option" data-lang="fa"><img class="flag" src="https://flagcdn.com/w40/ir.png" srcset="https://flagcdn.com/w80/ir.png 2x" alt="" width="28" height="20" loading="lazy"><span class="lang-name">فارسی</span></button>
+          <button type="button" class="lang-option" data-lang="ur"><img class="flag" src="https://flagcdn.com/w40/pk.png" srcset="https://flagcdn.com/w80/pk.png 2x" alt="" width="28" height="20" loading="lazy"><span class="lang-name">اردو</span></button>
+          <button type="button" class="lang-option" data-lang="es"><img class="flag" src="https://flagcdn.com/w40/es.png" srcset="https://flagcdn.com/w80/es.png 2x" alt="" width="28" height="20" loading="lazy"><span class="lang-name">Español</span></button>
+          <button type="button" class="lang-option" data-lang="fr"><img class="flag" src="https://flagcdn.com/w40/fr.png" srcset="https://flagcdn.com/w80/fr.png 2x" alt="" width="28" height="20" loading="lazy"><span class="lang-name">Français</span></button>
+          <button type="button" class="lang-option" data-lang="de"><img class="flag" src="https://flagcdn.com/w40/de.png" srcset="https://flagcdn.com/w80/de.png 2x" alt="" width="28" height="20" loading="lazy"><span class="lang-name">Deutsch</span></button>
+          <button type="button" class="lang-option" data-lang="it"><img class="flag" src="https://flagcdn.com/w40/it.png" srcset="https://flagcdn.com/w80/it.png 2x" alt="" width="28" height="20" loading="lazy"><span class="lang-name">Italiano</span></button>
         </div>
       </div>
     </div>
