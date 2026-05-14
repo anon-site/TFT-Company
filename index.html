@@ -1,457 +1,347 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>مشغل IPTV المتطور - Advanced IPTV Player</title>
-    
-    <!-- Video.js CDN -->
-    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TFT Company â€” Where Prompt Delivery Meets Today's Need</title>
+<meta name="description" content="TFT Company â€” Professional same-day, parcel, and door-to-door delivery services across Greece and Cyprus. Athens-based fleet of motorcycles, e-bikes & vans." />
+<meta name="keywords" content="TFT Company, delivery Athens, delivery Greece, delivery Cyprus, same day delivery, parcel delivery, door to door, courier Greece" />
+<meta name="author" content="TFT Company" />
+<meta name="theme-color" content="#ff6b00" />
+<link rel="canonical" href="https://tftinfo.net/" />
+
+<!-- Favicon (inline SVG) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff6b00'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Montserrat,Arial,sans-serif' font-weight='900' font-size='28' fill='white'%3ETFT%3C/text%3E%3C/svg%3E">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="TFT Company â€” Where Prompt Delivery Meets Today's Need" />
+<meta property="og:description" content="Professional delivery services across Greece and Cyprus. Same-day, parcel, and door-to-door delivery." />
+<meta property="og:image" content="img/efood-island-project_generic-banner-1.webp" />
+<meta property="og:url" content="https://tftinfo.net/" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="TFT Company â€” Prompt Delivery" />
+<meta name="twitter:description" content="Professional delivery services across Greece and Cyprus." />
+<meta name="twitter:image" content="img/efood-island-project_generic-banner-1.webp" />
+
+<link rel="preload" as="image" href="img/efood-island-project_generic-banner-1.webp" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<!-- Site stylesheet -->
+<link rel="stylesheet" href="css/style.css" />
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "TFT Company",
+  "image": "img/efood-island-project_generic-banner-1.webp",
+  "description": "Professional same-day, parcel, and door-to-door delivery services across Greece and Cyprus.",
+  "@id": "https://tftinfo.net/",
+  "url": "https://tftinfo.net/",
+  "telephone": ["+306931206074","+302106428703"],
+  "email": "tft@tftinfo.net",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Fillipou Plita 9",
+    "addressLocality": "Athens",
+    "postalCode": "11476",
+    "addressCountry": "GR"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "11:00",
+    "closes": "19:00"
+  }],
+  "areaServed": ["Greece","Cyprus"]
+}
+</script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <i class="fas fa-tv"></i>
-                <h1>مشغل IPTV الاحترافي</h1>
-            </div>
-            <nav class="nav">
-                <button class="nav-btn active" data-tab="player">
-                    <i class="fas fa-play-circle"></i> المشغل
-                </button>
-                <button class="nav-btn" data-tab="extractor">
-                    <i class="fas fa-link"></i> استخراج الروابط
-                </button>
-                <button class="nav-btn" data-tab="m3u-parser">
-                    <i class="fas fa-list"></i> محلل M3U
-                </button>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <div class="container">
-            <!-- Player Tab -->
-            <div class="tab-content active" id="player-tab">
-                <div class="section-card">
-                    <h2 class="section-title">
-                        <i class="fas fa-video"></i> المشغل الاحترافي
-                    </h2>
-                    
-                    <div class="input-group">
-                        <input type="text" 
-                               id="stream-url" 
-                               class="input-field" 
-                               placeholder="أدخل رابط البث المباشر (M3U8, MP4, RTMP, HLS, DASH...)">
-                        <button class="btn btn-primary" id="play-btn">
-                            <i class="fas fa-play"></i> تشغيل
-                        </button>
-                    </div>
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-wrap">
+    <a href="#home" class="logo"><i class="fas fa-truck-fast"></i> TFT<span> Company</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Our Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#business">Details</a></li>
+      <li><a href="#contact" class="nav-cta">Join Our Team</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fas fa-bars"></i><span class="bar"></span></button>
+  </div>
+</nav>
 
-                    <!-- Video Player Container -->
-                    <div class="player-container" id="player-container">
-                        <video id="main-player" 
-                               class="video-js vjs-big-play-centered"
-                               controls 
-                               preload="auto"
-                               width="100%"
-                               height="300">
-                            <p class="vjs-no-js">
-                                لتشغيل الفيديو، يرجى تفعيل JavaScript
-                            </p>
-                        </video>
-                    </div>
-
-                    <!-- Player Controls -->
-                    <div class="player-controls">
-                        <button class="control-btn" id="quality-btn" title="الجودة">
-                            <i class="fas fa-cog"></i> الجودة
-                        </button>
-                        <button class="control-btn" id="subtitle-btn" title="الترجمة">
-                            <i class="fas fa-closed-captioning"></i> الترجمة
-                        </button>
-                        <button class="control-btn" id="fullscreen-btn" title="ملء الشاشة">
-                            <i class="fas fa-expand"></i> ملء الشاشة
-                        </button>
-                        <button class="control-btn" id="pip-btn" title="صورة في صورة">
-                            <i class="fas fa-clone"></i> PIP
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Link Extractor Tab -->
-            <div class="tab-content" id="extractor-tab">
-                <!-- IPTV URL Parser -->
-                <div class="section-card">
-                    <h2 class="section-title">
-                        <i class="fas fa-key"></i> محلل روابط IPTV
-                    </h2>
-                    
-                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 12px 15px; border-radius: 8px; margin-bottom: 15px; color: white; font-size: 0.9rem;">
-                        <i class="fas fa-info-circle"></i> <strong>استخرج Username و Password ومعلومات الخادم من رابط IPTV</strong>
-                    </div>
-                    
-                    <div class="input-group">
-                        <input type="text" 
-                               id="iptv-url" 
-                               class="input-field" 
-                               placeholder="أدخل رابط IPTV (مثال: http://server.tv:8080/live/user/pass/123.ts)">
-                        <button class="btn btn-primary" id="parse-iptv-btn">
-                            <i class="fas fa-search"></i> تحليل
-                        </button>
-                    </div>
-                    
-                    <!-- IPTV Info Display -->
-                    <div id="iptv-info" style="display: none; margin-top: 20px;">
-                        <div style="background: rgba(15, 23, 42, 0.6); padding: 20px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1);">
-                            <h3 style="color: var(--primary-color); margin-bottom: 15px; display: flex; align-items: center; gap: 8px;">
-                                <i class="fas fa-server"></i> معلومات الخادم
-                            </h3>
-                            
-                            <div class="info-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
-                                <div class="info-item" style="background: rgba(30, 41, 59, 0.6); padding: 12px; border-radius: 8px;">
-                                    <strong style="color: #94a3b8; font-size: 0.85rem; display: block; margin-bottom: 5px;">🌐 Server</strong>
-                                    <span id="iptv-server" style="color: #f1f5f9; word-break: break-all;">-</span>
-                                    <button onclick="copyText('iptv-server')" style="margin-top: 5px; padding: 4px 8px; background: var(--dark-hover); border: none; border-radius: 4px; color: white; cursor: pointer; font-size: 0.8rem;">
-                                        <i class="fas fa-copy"></i> نسخ
-                                    </button>
-                                </div>
-                                
-                                <div class="info-item" style="background: rgba(30, 41, 59, 0.6); padding: 12px; border-radius: 8px;">
-                                    <strong style="color: #94a3b8; font-size: 0.85rem; display: block; margin-bottom: 5px;">🔔 Port</strong>
-                                    <span id="iptv-port" style="color: #f1f5f9;">-</span>
-                                </div>
-                                
-                                <div class="info-item" style="background: rgba(30, 41, 59, 0.6); padding: 12px; border-radius: 8px;">
-                                    <strong style="color: #94a3b8; font-size: 0.85rem; display: block; margin-bottom: 5px;">👤 Username</strong>
-                                    <span id="iptv-username" style="color: #10b981; font-weight: bold;">-</span>
-                                    <button onclick="copyText('iptv-username')" style="margin-top: 5px; padding: 4px 8px; background: var(--dark-hover); border: none; border-radius: 4px; color: white; cursor: pointer; font-size: 0.8rem;">
-                                        <i class="fas fa-copy"></i> نسخ
-                                    </button>
-                                </div>
-                                
-                                <div class="info-item" style="background: rgba(30, 41, 59, 0.6); padding: 12px; border-radius: 8px;">
-                                    <strong style="color: #94a3b8; font-size: 0.85rem; display: block; margin-bottom: 5px;">🔑 Password</strong>
-                                    <span id="iptv-password" style="color: #f59e0b; font-weight: bold;">-</span>
-                                    <button onclick="copyText('iptv-password')" style="margin-top: 5px; padding: 4px 8px; background: var(--dark-hover); border: none; border-radius: 4px; color: white; cursor: pointer; font-size: 0.8rem;">
-                                        <i class="fas fa-copy"></i> نسخ
-                                    </button>
-                                </div>
-                                
-                                <div class="info-item" style="background: rgba(30, 41, 59, 0.6); padding: 12px; border-radius: 8px;">
-                                    <strong style="color: #94a3b8; font-size: 0.85rem; display: block; margin-bottom: 5px;">🎬 Stream Type</strong>
-                                    <span id="iptv-stream-type" style="color: #8b5cf6;">-</span>
-                                </div>
-                                
-                                <div class="info-item" style="background: rgba(30, 41, 59, 0.6); padding: 12px; border-radius: 8px;">
-                                    <strong style="color: #94a3b8; font-size: 0.85rem; display: block; margin-bottom: 5px;">🆔 Stream ID</strong>
-                                    <span id="iptv-stream-id" style="color: #3b82f6;">-</span>
-                                </div>
-                            </div>
-                            
-                            <div style="margin-top: 20px; padding: 15px; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 8px;">
-                                <h4 style="color: #10b981; margin: 0 0 10px 0; font-size: 0.95rem;">🔗 روابط API مفيدة</h4>
-                                <div style="display: flex; flex-direction: column; gap: 8px;">
-                                    <div>
-                                        <strong style="color: #cbd5e1; font-size: 0.85rem;">Player API:</strong>
-                                        <code id="iptv-player-api" style="background: rgba(0,0,0,0.3); padding: 6px 10px; border-radius: 4px; display: block; margin-top: 5px; color: #10b981; font-size: 0.85rem; word-break: break-all;">-</code>
-                                        <button onclick="copyText('iptv-player-api')" style="margin-top: 5px; padding: 6px 12px; background: #10b981; border: none; border-radius: 4px; color: white; cursor: pointer; font-size: 0.85rem; font-weight: bold;">
-                                            <i class="fas fa-copy"></i> نسخ Player API
-                                        </button>
-                                    </div>
-                                    
-                                    <div>
-                                        <strong style="color: #cbd5e1; font-size: 0.85rem;">M3U Playlist:</strong>
-                                        <code id="iptv-m3u-url" style="background: rgba(0,0,0,0.3); padding: 6px 10px; border-radius: 4px; display: block; margin-top: 5px; color: #f59e0b; font-size: 0.85rem; word-break: break-all;">-</code>
-                                        <button onclick="copyText('iptv-m3u-url')" style="margin-top: 5px; padding: 6px 12px; background: #f59e0b; border: none; border-radius: 4px; color: white; cursor: pointer; font-size: 0.85rem; font-weight: bold;">
-                                            <i class="fas fa-copy"></i> نسخ M3U URL
-                                        </button>
-                                    </div>
-                                    
-                                    <div id="iptv-m3u8-container" style="display: none;">
-                                        <strong style="color: #cbd5e1; font-size: 0.85rem;">📺 M3U8 Stream URL (للتشغيل المباشر):</strong>
-                                        <code id="iptv-m3u8-stream" style="background: rgba(0,0,0,0.3); padding: 6px 10px; border-radius: 4px; display: block; margin-top: 5px; color: #06b6d4; font-size: 0.85rem; word-break: break-all;">-</code>
-                                        <div style="display: flex; gap: 8px; margin-top: 5px;">
-                                            <button onclick="copyText('iptv-m3u8-stream')" style="flex: 1; padding: 6px 12px; background: #06b6d4; border: none; border-radius: 4px; color: white; cursor: pointer; font-size: 0.85rem; font-weight: bold;">
-                                                <i class="fas fa-copy"></i> نسخ M3U8
-                                            </button>
-                                            <button onclick="playM3U8Stream()" style="flex: 1; padding: 6px 12px; background: #8b5cf6; border: none; border-radius: 4px; color: white; cursor: pointer; font-size: 0.85rem; font-weight: bold;">
-                                                <i class="fas fa-play"></i> تشغيل الآن
-                                            </button>
-                                        </div>
-                                    </div>
-                                    
-                                    <div id="iptv-ts-container" style="display: none;">
-                                        <strong style="color: #cbd5e1; font-size: 0.85rem;">📡 TS Stream URL (صيغة بديلة):</strong>
-                                        <code id="iptv-ts-stream" style="background: rgba(0,0,0,0.3); padding: 6px 10px; border-radius: 4px; display: block; margin-top: 5px; color: #ec4899; font-size: 0.85rem; word-break: break-all;">-</code>
-                                        <div style="display: flex; gap: 8px; margin-top: 5px;">
-                                            <button onclick="copyText('iptv-ts-stream')" style="flex: 1; padding: 6px 12px; background: #ec4899; border: none; border-radius: 4px; color: white; cursor: pointer; font-size: 0.85rem; font-weight: bold;">
-                                                <i class="fas fa-copy"></i> نسخ TS
-                                            </button>
-                                            <button onclick="playTSStream()" style="flex: 1; padding: 6px 12px; background: #8b5cf6; border: none; border-radius: 4px; color: white; cursor: pointer; font-size: 0.85rem; font-weight: bold;">
-                                                <i class="fas fa-play"></i> تشغيل الآن
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Original Link Extractor -->
-                <div class="section-card">
-                    <h2 class="section-title">
-                        <i class="fas fa-link"></i> استخراج الروابط من المواقع
-                    </h2>
-                    
-                    <div class="input-group">
-                        <input type="text" 
-                               id="page-url" 
-                               class="input-field" 
-                               placeholder="أدخل رابط الصفحة (مثل: aflam4you.net, elahmad.com...)">
-                        <button class="btn btn-secondary" id="extract-btn">
-                            <i class="fas fa-search"></i> استخراج
-                        </button>
-                    </div>
-
-                    <!-- Extraction Results -->
-                    <div class="results-container" id="extraction-results">
-                        <div class="empty-state">
-                            <i class="fas fa-info-circle"></i>
-                            <p>قم بإدخال رابط الصفحة لاستخراج روابط البث المباشر</p>
-                        </div>
-                    </div>
-
-                    <!-- Extracted Links List -->
-                    <div class="links-list" id="extracted-links"></div>
-                </div>
-            </div>
-
-            <!-- M3U Parser Tab -->
-            <div class="tab-content" id="m3u-parser-tab">
-                <div class="section-card">
-                    <h2 class="section-title">
-                        <i class="fas fa-list"></i> محلل قوائم M3U
-                    </h2>
-                    
-                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 12px 15px; border-radius: 8px; margin-bottom: 15px; color: white; font-size: 0.9rem;">
-                        <i class="fas fa-magic"></i> <strong>ميزة ذكية:</strong> يحاول النظام عبر 8 طرق مختلفة لتحميل الرابط تلقائياً! <span style="opacity: 0.8;">(للتنزيل اليدوي: <i class="fas fa-save"></i>)</span>
-                    </div>
-                    
-                    <div class="input-group">
-                        <input type="text" 
-                               id="m3u-url" 
-                               class="input-field" 
-                               placeholder="أدخل رابط قائمة M3U أو قم برفع ملف">
-                        <button class="btn btn-success" id="parse-m3u-btn">
-                            <i class="fas fa-download"></i> تحليل
-                        </button>
-                        <button class="btn btn-secondary" id="download-m3u-btn" title="تنزيل الملف يدوياً">
-                            <i class="fas fa-save"></i>
-                        </button>
-                    </div>
-                    
-                    <div class="file-upload-section">
-                        <label for="m3u-file-input" class="file-upload-label">
-                            <i class="fas fa-upload"></i>
-                            <span>رفع ملف M3U من جهازك</span>
-                            <input type="file" id="m3u-file-input" accept=".m3u,.m3u8,.txt" style="display: none;">
-                        </label>
-                        <span class="file-name" id="file-name-display"></span>
-                    </div>
-
-                    <!-- M3U Controls -->
-                    <div class="m3u-controls" id="m3u-controls" style="display: none;">
-                        <div class="search-box">
-                            <i class="fas fa-search"></i>
-                            <input type="text" 
-                                   id="channel-search" 
-                                   placeholder="ابحث عن قناة..."
-                                   class="search-input">
-                        </div>
-                        
-                        <div class="filter-buttons">
-                            <button class="filter-btn" id="check-channels-btn">
-                                <i class="fas fa-check-circle"></i> فحص القنوات
-                            </button>
-                            <button class="filter-btn" id="hide-offline-btn">
-                                <i class="fas fa-eye-slash"></i> إخفاء المعطلة
-                            </button>
-                            <button class="filter-btn" id="show-all-btn">
-                                <i class="fas fa-eye"></i> عرض الكل
-                            </button>
-                            <button class="filter-btn" id="view-playlist-btn" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                                <i class="fas fa-list-ul"></i> قائمتي (<span id="playlist-count">0</span>)
-                            </button>
-                            <button class="filter-btn" id="export-btn">
-                                <i class="fas fa-file-export"></i> تصدير M3U
-                            </button>
-                        </div>
-
-                        <div class="stats">
-                            <span class="stat-item">
-                                <i class="fas fa-tv"></i> 
-                                الإجمالي: <strong id="total-channels">0</strong>
-                            </span>
-                            <span class="stat-item">
-                                <i class="fas fa-check"></i> 
-                                تعمل: <strong id="working-channels">0</strong>
-                            </span>
-                            <span class="stat-item">
-                                <i class="fas fa-times"></i> 
-                                معطلة: <strong id="offline-channels">0</strong>
-                            </span>
-                        </div>
-                    </div>
-
-                    <!-- Channels Grid -->
-                    <div class="channels-grid" id="channels-grid"></div>
-
-                    <!-- Loading Indicator -->
-                    <div class="loading" id="loading" style="display: none;">
-                        <div class="spinner"></div>
-                        <p>جاري التحليل...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- Modal for Video Player -->
-    <div class="modal" id="video-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title" id="modal-title">
-                    <i class="fas fa-tv"></i> 
-                    <span id="channel-name">اسم القناة</span>
-                </h3>
-                <button class="close-btn" id="close-modal">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            
-            <div class="modal-body">
-                <!-- IPTV Warning -->
-                <div class="iptv-warning" style="display: none;" id="iptv-warning">
-                    <div style="background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%); padding: 15px; border-radius: 10px; margin-bottom: 20px;">
-                        <h4 style="color: white; margin: 0 0 10px 0; display: flex; align-items: center; gap: 8px;">
-                            <i class="fas fa-exclamation-triangle"></i>
-                            لا تعمل القناة؟ استخدم VLC!
-                        </h4>
-                        <p style="color: white; margin: 0 0 10px 0; font-size: 0.95rem;">
-                            ⚡ روابط IPTV لا تعمل في المتصفح بسبب قيود الأمان
-                        </p>
-                        <button onclick="downloadSingleChannel()" style="background: white; color: #ff6b35; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 8px;">
-                            <i class="fas fa-download"></i>
-                            حمّل ملف M3U وافتحه في VLC
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- Channel Info -->
-                <div class="channel-info">
-                    <div class="info-item">
-                        <strong>الفئة:</strong>
-                        <span id="channel-category">-</span>
-                    </div>
-                    <div class="info-item">
-                        <strong>الرابط:</strong>
-                        <span id="channel-url" class="url-text">-</span>
-                        <button class="copy-btn" id="copy-url-btn" title="نسخ الرابط">
-                            <i class="fas fa-copy"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Modal Player -->
-                <div class="modal-player-container">
-                    <video id="modal-player" 
-                           class="video-js vjs-big-play-centered"
-                           controls 
-                           preload="auto"
-                           width="100%"
-                           height="500">
-                    </video>
-                </div>
-            </div>
-        </div>
+<!-- Hero -->
+<header class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <span class="hero-badge"><i class="fas fa-bolt"></i> Trusted Across Greece &amp; Cyprus</span>
+    <h1>TFT Company<span>Where Prompt Delivery Meets Today's Need</span></h1>
+    <p>Delivering Excellence. Apply now for a delivery role and join our dedicated team serving communities across Greece and Cyprus.</p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn btn-primary">Join Our Team <i class="fas fa-arrow-right"></i></a>
+      <a href="#services" class="btn btn-outline">Our Services</a>
     </div>
+  </div>
+  <a href="#about" class="scroll-indicator"><i class="fas fa-chevron-down"></i></a>
+</header>
 
-    <!-- Playlist Modal -->
-    <div class="modal" id="playlist-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title">
-                    <i class="fas fa-list-ul"></i> 
-                    <span>قائمة التشغيل المخصصة</span>
-                </h3>
-                <button class="close-btn" id="close-playlist-modal">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            
-            <div class="modal-body">
-                <div class="playlist-info" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 15px; border-radius: 10px; margin-bottom: 20px; color: white;">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <h4 style="margin: 0 0 5px 0;">🎵 قنواتي المفضلة</h4>
-                            <p style="margin: 0; opacity: 0.9; font-size: 0.9rem;">إجمالي: <strong id="my-playlist-total">0</strong> قناة</p>
-                        </div>
-                        <div>
-                            <button onclick="exportMyPlaylist()" style="background: white; color: #f5576c; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-left: 10px;">
-                                <i class="fas fa-download"></i> تصدير M3U
-                            </button>
-                            <button onclick="clearPlaylist()" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid white; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer;">
-                                <i class="fas fa-trash"></i> مسح الكل
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div id="my-playlist-grid" class="channels-grid">
-                    <div class="empty-state" style="text-align: center; padding: 40px; color: #999;">
-                        <i class="fas fa-folder-open" style="font-size: 48px; margin-bottom: 15px;"></i>
-                        <p>لا توجد قنوات في قائمتك</p>
-                        <p style="font-size: 0.9rem;">اضغط على "إضافة" في أي قناة لإضافتها</p>
-                    </div>
-                </div>
-            </div>
+<!-- About -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <span class="eyebrow">Get to Know Us</span>
+        <h2>Delivering Excellence Across Greece &amp; Cyprus</h2>
+        <p>Welcome to our digital realm! We're here to inspire, inform, and assist you. Explore, learn, and let your curiosity thrive.</p>
+        <p>Our delivery company, operating successfully in Greece and Cyprus for the past two years, boasts a versatile fleet comprising motorcycles, electric bikes, and vans. We specialize in providing top-notch delivery services across the region, ensuring swift and reliable solutions for all your logistical needs.</p>
+        <div class="about-stats">
+          <div class="stat"><h3>2+</h3><p>Years Active</p></div>
+          <div class="stat"><h3>50K+</h3><p>Deliveries</p></div>
+          <div class="stat"><h3>2</h3><p>Countries</p></div>
         </div>
+      </div>
+      <div class="about-img reveal">
+        <img src="img/efood-1.webp" alt="TFT Delivery" loading="lazy">
+      </div>
     </div>
+  </div>
+</section>
 
-    <!-- Toast Notifications -->
-    <div class="toast-container" id="toast-container"></div>
+<!-- Gallery -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="eyebrow">Our Work</span>
+      <h2>Moments In Motion</h2>
+      <p>A look at our fleet, our riders, and the streets we serve every day.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal"><img src="img/1b6a987f1e314d489ccd4eb119de5e54.avif" alt="Delivery 1" loading="lazy"><span class="gallery-overlay">On the Move</span></div>
+      <div class="gallery-item reveal"><img src="img/8da6d2_b107d937042640b883aeca9986ef9b26~mv2.avif" alt="Delivery 2" loading="lazy"><span class="gallery-overlay">Ready to Ride</span></div>
+      <div class="gallery-item reveal"><img src="img/cfb1f8f03ec948f2a3eb4e46890195a3.avif" alt="Delivery 3" loading="lazy"><span class="gallery-overlay">City Streets</span></div>
+      <div class="gallery-item reveal"><img src="img/8da6d2_d04bb001b123421784d74f3e9ad8a113~mv2.avif" alt="Delivery 4" loading="lazy"><span class="gallery-overlay">Fast Service</span></div>
+      <div class="gallery-item reveal"><img src="img/675984878_122107134008847189_8457121091592709556_n.webp" alt="Delivery 5" loading="lazy"><span class="gallery-overlay">Our Team</span></div>
+      <div class="gallery-item reveal"><img src="img/e64e64d2-ab86-49f4-bb51-34c8c3d0e463_Riders-landing-assets-3.webp" alt="Delivery 6" loading="lazy"><span class="gallery-overlay">Riders First</span></div>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>© 2025 مشغل IPTV المتطور - جميع الحقوق محفوظة</p>
-            <div class="footer-links">
-                <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#"><i class="fas fa-info-circle"></i> حول</a>
-                <a href="#"><i class="fas fa-envelope"></i> اتصل بنا</a>
-            </div>
+<!-- Services -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="eyebrow">Services</span>
+      <h2>Elevate Your Experience with Our Premium Services</h2>
+      <p>Reliable, fast, and tailored delivery solutions for every need.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-clock"></i></div>
+        <h3>Same Day Delivery</h3>
+        <p>"Swift solutions, your way, every day."</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-box"></i></div>
+        <h3>Parcel Delivery</h3>
+        <p>"Reliable Parcel Delivery, Where Speed Meets Safety."</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-house-chimney"></i></div>
+        <h3>Door To Door Delivery</h3>
+        <p>"Seamless, efficient door-to-door delivery at your service."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section id="team">
+  <div class="container">
+    <div class="team-content">
+      <div class="reveal">
+        <img src="img/e64e64d2-ab86-49f4-bb51-34c8c3d0e463_Riders-landing-assets-3.webp" alt="Our Team" loading="lazy">
+      </div>
+      <div class="team-text reveal">
+        <span class="eyebrow" style="color:var(--primary);font-weight:600;letter-spacing:3px;text-transform:uppercase;font-size:.85rem;margin-bottom:12px;display:block">Our People</span>
+        <h2>Our Team.</h2>
+        <p>Our team is the heart and soul of our company, and what sets us apart. With a blend of passion, expertise, and dedication, we're committed to delivering unparalleled service excellence.</p>
+        <p>Trust in our capable hands, and experience the difference that a truly exceptional team can make. Your satisfaction is our ultimate goal.</p>
+        <ul class="team-features">
+          <li><i class="fas fa-check-circle"></i> Experienced &amp; trained riders</li>
+          <li><i class="fas fa-check-circle"></i> Versatile fleet â€” bikes, e-bikes &amp; vans</li>
+          <li><i class="fas fa-check-circle"></i> Customer-first mindset</li>
+          <li><i class="fas fa-check-circle"></i> Active across Greece &amp; Cyprus</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Business Details -->
+<section class="business" id="business">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="eyebrow">Business Details</span>
+      <h2>Find Us. Reach Us. Visit Us.</h2>
+      <p>Everything you need to get in touch and plan a visit to TFT Company.</p>
+    </div>
+    <div class="business-grid">
+      <div class="business-card reveal">
+        <i class="fas fa-envelope"></i>
+        <h3>Contact</h3>
+        <p><a href="mailto:tft@tftinfo.net">tft@tftinfo.net</a></p>
+        <p><a href="tel:+306931206074">+30 693 120 6074</a></p>
+        <p><a href="tel:+302106428703">+30 210 642 8703</a></p>
+      </div>
+      <div class="business-card reveal">
+        <i class="fas fa-location-dot"></i>
+        <h3>Address</h3>
+        <p>Fillipou Plita 9,</p>
+        <p>11476, Athens</p>
+        <p>Greece</p>
+      </div>
+      <div class="business-card reveal">
+        <i class="fas fa-clock"></i>
+        <h3>Opening Hours</h3>
+        <p>Mon - Fri: 11am - 7pm</p>
+        <p>Saturday / Sunday: Closed</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="eyebrow">Join Our Team</span>
+      <h2>Apply Now &amp; Ride With Us</h2>
+      <p>Apply now for a delivery role and join our dedicated team serving communities across Greece and Cyprus.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <span class="contact-info-badge"><i class="fas fa-circle"></i> Available Now</span>
+        <h3>Get in Touch</h3>
+        <p>Delivering Excellence. Get in touch today and let us handle your delivery needs across Greece and Cyprus.</p>
+        <hr>
+        <div class="contact-item">
+          <i class="fas fa-location-dot"></i>
+          <div><p>Address</p><p>Fillipou Plita 9, 11476, Athens</p></div>
         </div>
-    </footer>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div><p>Phone</p><p><a href="tel:+306931206074">+30 693 120 6074</a></p><p><a href="tel:+302106428703">+30 210 642 8703</a></p></div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div><p>Email</p><p><a href="mailto:tft@tftinfo.net">tft@tftinfo.net</a></p></div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-clock"></i>
+          <div><p>Working Hours</p><p>Mon - Fri: 11am - 7pm</p></div>
+        </div>
+      </div>
 
-    <!-- Scripts -->
-    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/extractor.js"></script>
-    <script src="js/m3u-parser.js"></script>
-    <script src="js/player.js"></script>
+      <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/tft@tftinfo.net" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New Contact from TFT Website">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none">
+
+        <h3>Send Us a Message</h3>
+        <p>Fill out the form below and our team will reach out within 24 hours.</p>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" required placeholder="Tell us about yourself or your inquiry..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Send Message <i class="fas fa-paper-plane"></i></button>
+        <div class="form-msg" id="formMsg"><i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Map -->
+<section class="map-section">
+  <div class="map-wrap">
+    <iframe
+      src="https://www.google.com/maps?q=Fillipou+Plita+9,+11476+Athens,+Greece&output=embed"
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="TFT Company Location"></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-center">
+      <a href="#home" class="logo"><i class="fas fa-truck-fast"></i> TFT<span> Company</span></a>
+      <p>Where Prompt Delivery Meets Today's Need.<br>Reliable same-day, parcel, and door-to-door delivery across Greece and Cyprus.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>&copy; <span class="year">2026</span></span>
+      <span class="dot"></span>
+      <span class="brand">TFT Company</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/306931206074?text=Hello%20TFT%20Company%2C%20I%27d%20like%20to%20know%20more%20about%20your%20delivery%20services." target="_blank" rel="noopener" class="float-btn whatsapp-btn" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<!-- Back to top -->
+<button class="float-btn back-top" id="backTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<!-- Cookie banner (GDPR) -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie notice">
+  <h4><i class="fas fa-cookie-bite"></i> We use cookies</h4>
+  <p>We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking "Accept", you consent to our use of cookies.</p>
+  <div class="cookie-buttons">
+    <button class="cookie-accept" id="cookieAccept">Accept All</button>
+    <button class="cookie-decline" id="cookieDecline">Decline</button>
+  </div>
+</div>
+
+<!-- Site script -->
+<script src="js/main.js" defer></script>
 </body>
 </html>
