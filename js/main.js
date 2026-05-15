@@ -404,6 +404,32 @@ document.addEventListener('DOMContentLoaded', () => {
     backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
 
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section, header');
+  const navAnchors = document.querySelectorAll('.nav-links a');
+  
+  function updateActiveNav() {
+    const scrollY = window.scrollY;
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      const sectionHeight = section.offsetHeight;
+      const sectionId = section.getAttribute('id');
+      
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        navAnchors.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${sectionId}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', updateActiveNav);
+  updateActiveNav();
+
   // Mobile menu
   const menuToggle = document.getElementById('menuToggle');
   const navLinks = document.getElementById('navLinks');

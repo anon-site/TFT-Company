@@ -32,6 +32,8 @@ img{max-width:100%;display:block}
 .nav-links a::after{content:'';position:absolute;bottom:-6px;left:0;width:0;height:2px;background:var(--primary);transition:width .3s}
 .nav-links a:hover{color:var(--primary)}
 .nav-links a:hover::after{width:100%}
+.nav-links a.active{color:var(--primary)}
+.nav-links a.active::after{width:100%}
 .nav-cta{background:var(--primary);color:#fff!important;padding:10px 22px;border-radius:30px;font-weight:600;transition:all .3s}
 .nav-cta:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 8px 20px rgba(255,107,0,.4)}
 .nav-cta::after{display:none}
