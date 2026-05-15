@@ -374,7 +374,7 @@ html[dir="rtl"] .cookie-banner h4{flex-direction:row-reverse;justify-content:fle
   body.menu-open .menu-toggle{opacity:0;pointer-events:none}
 
   /* Backdrop (no blur — keeps mobile GPU fast) */
-  .nav-backdrop{display:block;position:fixed;inset:0;background:rgba(15,23,42,.5);z-index:998;opacity:0;pointer-events:none;transition:opacity .35s ease;will-change:opacity}
+  .nav-backdrop{display:block;position:fixed;inset:0;background:rgba(15,23,42,.5);z-index:998;opacity:0;pointer-events:none;transition:opacity .25s ease}
   body.menu-open .nav-backdrop{opacity:1;pointer-events:auto}
 
   /* Dedicated close button (shows only when drawer is open) */
@@ -384,18 +384,18 @@ html[dir="rtl"] .cookie-banner h4{flex-direction:row-reverse;justify-content:fle
   .nav-close:active{transform:scale(.92)}
 
   /* Mobile nav drawer — modern */
-  .nav-links{position:fixed;top:0;right:-100%;flex-direction:column;background:#ffffff;width:84%;max-width:340px;height:100vh;padding:80px 22px 40px;gap:6px;box-shadow:-20px 0 60px rgba(15,23,42,.2);transition:right .45s cubic-bezier(.22,1,.36,1);align-items:stretch;overflow-y:auto;z-index:1000;will-change:transform}
+  .nav-links{position:fixed;top:42px;right:-100%;flex-direction:column;background:#ffffff;width:84%;max-width:340px;height:calc(100vh - 42px);padding:22px;gap:6px;box-shadow:-20px 0 60px rgba(15,23,42,.2);transition:right .35s cubic-bezier(.22,1,.36,1);align-items:stretch;overflow-y:auto;z-index:999}
   .nav-links::before{content:'';position:absolute;top:0;left:0;right:0;height:70px;background:linear-gradient(180deg,var(--bg-soft) 0%,transparent 100%);pointer-events:none;z-index:0}
   .nav-links.active{right:0}
-  .nav-links li{position:relative;z-index:1;width:100%;opacity:0;transform:translateX(24px);transition:all .45s cubic-bezier(.22,1,.36,1)}
+  .nav-links li{position:relative;z-index:1;width:100%;opacity:0;transform:translateX(24px);transition:all .3s cubic-bezier(.22,1,.36,1)}
   .nav-links.active li{opacity:1;transform:translateX(0)}
-  .nav-links.active li:nth-child(1){transition-delay:.10s}
-  .nav-links.active li:nth-child(2){transition-delay:.15s}
-  .nav-links.active li:nth-child(3){transition-delay:.20s}
-  .nav-links.active li:nth-child(4){transition-delay:.25s}
-  .nav-links.active li:nth-child(5){transition-delay:.30s}
-  .nav-links.active li:nth-child(6){transition-delay:.35s}
-  .nav-links.active li:nth-child(7){transition-delay:.40s}
+  .nav-links.active li:nth-child(1){transition-delay:.05s}
+  .nav-links.active li:nth-child(2){transition-delay:.08s}
+  .nav-links.active li:nth-child(3){transition-delay:.11s}
+  .nav-links.active li:nth-child(4){transition-delay:.14s}
+  .nav-links.active li:nth-child(5){transition-delay:.17s}
+  .nav-links.active li:nth-child(6){transition-delay:.20s}
+  .nav-links.active li:nth-child(7){transition-delay:.23s}
 
   .nav-links a{display:flex;align-items:center;gap:16px;padding:15px 18px;border-radius:14px;font-size:1rem;font-weight:500;color:var(--secondary);transition:all .3s cubic-bezier(.22,1,.36,1);position:relative}
   .nav-links a::before{font-family:'Font Awesome 6 Free';font-weight:900;color:var(--primary);font-size:1rem;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:rgba(255,107,0,.1);border-radius:10px;transition:all .3s}
@@ -416,7 +416,7 @@ html[dir="rtl"] .cookie-banner h4{flex-direction:row-reverse;justify-content:fle
 
   /* Backdrop when menu open */
   body.menu-open{overflow:hidden}
-  body.menu-open::after{content:'';position:fixed;inset:0;background:rgba(15,23,42,.55);backdrop-filter:blur(4px);z-index:999;animation:fadeIn .35s ease}
+  body.menu-open::after{content:'';position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:999;animation:fadeIn .25s ease}
   @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 
   /* Hero */
@@ -520,9 +520,12 @@ html[dir="rtl"] .cookie-banner h4{flex-direction:row-reverse;justify-content:fle
 
   /* Contact modal — mobile */
   .contact-modal{padding:0;align-items:flex-end}
-  .contact-modal-panel{max-height:92vh;border-radius:18px 18px 0 0}
-  .contact-modal-header{padding:16px 18px}
-  .contact-modal-body{padding:20px}
+  .contact-modal-panel{max-height:92vh;border-radius:18px 18px 0 0;width:100%;max-width:none}
+  .contact-modal-header{padding:18px 20px}
+  .contact-modal-header h3{font-size:1.05rem}
+  .contact-modal-close{width:40px;height:40px;font-size:1.1rem}
+  .contact-modal-body{padding:20px 18px 24px}
+  .contact-modal-desc{font-size:.9rem;margin-bottom:18px}
 
   /* Map */
   .map-wrap{height:340px}
