@@ -342,7 +342,6 @@ html[dir="rtl"] .cookie-banner h4{flex-direction:row-reverse;justify-content:fle
   html[dir="rtl"] .nav-links.active li{transform:translateX(0)}
   html[dir="rtl"] .nav-links a{flex-direction:row-reverse;text-align:right}
   html[dir="rtl"] .nav-links a:hover,html[dir="rtl"] .nav-links a:active{transform:translateX(4px)}
-  html[dir="rtl"] .nav-close{right:auto;left:14px}
   html[dir="rtl"] .hero .hero-content{text-align:center;align-items:center;padding:20px 24px}
   html[dir="rtl"] .hero .hero-content .hero-buttons{justify-content:center;flex-direction:row}
 }
@@ -383,22 +382,24 @@ html[dir="rtl"] .cookie-banner h4{flex-direction:row-reverse;justify-content:fle
   .logo{font-size:1.3rem}
   .logo i{font-size:1.5rem}
 
-  /* Hamburger button (animated; hidden when drawer is open — replaced by .nav-close) */
-  .menu-toggle{display:flex;flex-direction:column;justify-content:center;align-items:center;width:44px;height:44px;border-radius:12px;background:var(--bg-soft);transition:all .3s;gap:5px;padding:0}
+  /* Hamburger button (animated; transforms to X when drawer is open) */
+  .menu-toggle{display:flex;flex-direction:column;justify-content:center;align-items:center;width:44px;height:44px;border-radius:12px;background:var(--bg-soft);transition:all .3s;gap:5px;padding:0;border:none;cursor:pointer;position:relative}
   .menu-toggle i{display:none}
-  .menu-toggle::before,.menu-toggle::after,.menu-toggle span.bar{content:'';display:block;width:22px;height:2.5px;background:var(--secondary);border-radius:2px;transition:all .35s cubic-bezier(.65,.05,.36,1)}
-  .menu-toggle span.bar{margin:0}
-  body.menu-open .menu-toggle{opacity:0;pointer-events:none}
+  .menu-toggle::before,.menu-toggle::after,.menu-toggle span.bar{content:'';display:block;width:24px;height:3px;background:var(--secondary);border-radius:2px;transition:all .35s cubic-bezier(.65,.05,.36,1);position:absolute;left:50%;transform:translateX(-50%)}
+  .menu-toggle::before{top:13px}
+  .menu-toggle span.bar{top:21px}
+  .menu-toggle::after{top:29px}
+  body.menu-open .menu-toggle::before{top:21px;transform:translateX(-50%) rotate(45deg);background:var(--primary)}
+  body.menu-open .menu-toggle span.bar{opacity:0}
+  body.menu-open .menu-toggle::after{top:21px;transform:translateX(-50%) rotate(-45deg);background:var(--primary)}
+  body.menu-open .menu-toggle{background:rgba(255,107,0,.1)}
 
   /* Backdrop (no blur — keeps mobile GPU fast) */
   .nav-backdrop{display:block;position:fixed;inset:0;background:rgba(15,23,42,.5);z-index:998;opacity:0;pointer-events:none;transition:opacity .25s ease}
   body.menu-open .nav-backdrop{opacity:1;pointer-events:auto}
 
-  /* Dedicated close button (shows only when drawer is open) */
-  .nav-close{display:flex;position:fixed;top:2px;right:14px;width:44px;height:44px;border-radius:12px;align-items:center;justify-content:center;background:#fff;border:1.5px solid #e5e7eb;color:var(--secondary);font-size:1.15rem;cursor:pointer;z-index:1001;opacity:0;transform:scale(.7) rotate(-90deg);pointer-events:none;transition:opacity .3s ease,transform .35s cubic-bezier(.22,1,.36,1),background .25s,color .25s,border-color .25s;box-shadow:0 6px 18px rgba(15,23,42,.12)}
-  body.menu-open .nav-close{opacity:1;transform:scale(1) rotate(0);pointer-events:auto;transition-delay:.15s}
-  .nav-close:hover,.nav-close:focus-visible{background:var(--primary);color:#fff;border-color:var(--primary)}
-  .nav-close:active{transform:scale(.92)}
+  /* Dedicated close button (hidden - hamburger transforms to X instead) */
+  .nav-close{display:none}
 
   /* Mobile nav drawer — modern */
   .nav-links{position:fixed;top:42px;right:-100%;flex-direction:column;background:#ffffff;width:65%;max-width:300px;height:calc(100vh - 42px);padding:16px;gap:4px;box-shadow:-20px 0 60px rgba(15,23,42,.2);transition:right .35s cubic-bezier(.22,1,.36,1);align-items:stretch;overflow-y:auto;z-index:999;border-radius:20px 0 0 20px;border:3px solid #d1d5db}

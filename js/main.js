@@ -407,7 +407,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Mobile menu
   const menuToggle = document.getElementById('menuToggle');
   const navLinks = document.getElementById('navLinks');
-  const navClose = document.getElementById('navClose');
   const navBackdrop = document.getElementById('navBackdrop');
   function closeMenu() {
     if (!navLinks) return;
@@ -425,7 +424,6 @@ document.addEventListener('DOMContentLoaded', () => {
     menuToggle.addEventListener('click', () => {
       navLinks.classList.contains('active') ? closeMenu() : openMenu();
     });
-    if (navClose) navClose.addEventListener('click', closeMenu);
     if (navBackdrop) navBackdrop.addEventListener('click', closeMenu);
     document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', closeMenu));
     // Close on Escape
