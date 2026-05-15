@@ -3,7 +3,7 @@
 // ===== i18n translations =====
 const TFT_TRANSLATIONS = {
   en: {
-    "nav.home":"Home","nav.about":"About","nav.work":"Our Work","nav.services":"Services","nav.team":"Team","nav.details":"Coverage","nav.join":"Join Our Team","nav.menuTitle":"Menu",
+    "nav.home":"Home","nav.about":"About","nav.work":"Our Work","nav.services":"Services","nav.team":"Team","nav.details":"Coverage","nav.join":"Join Our Team",
     "ops.eyebrow":"Where We Operate","ops.title":"Two Countries. Countless Streets.","ops.desc":"From the bustling boulevards of Athens to the sun-lit coasts of Cyprus — we deliver where it matters most.",
     "ops.gr.name":"Greece","ops.gr.tag":"Mainland & islands coverage","ops.cy.name":"Cyprus","ops.cy.tag":"Serving the island's major hubs",
     "ops.f1.t":"Wide Coverage","ops.f1.d":"10+ cities across two countries.",
@@ -40,7 +40,7 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"We use cookies","cookie.desc":"We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking \"Accept\", you consent to our use of cookies.","cookie.accept":"Accept All","cookie.decline":"Decline"
   },
   el: {
-    "nav.home":"Αρχική","nav.about":"Σχετικά","nav.work":"Έργα μας","nav.services":"Υπηρεσίες","nav.team":"Ομάδα","nav.details":"Κάλυψη","nav.join":"Γίνε μέλος","nav.menuTitle":"Μενού",
+    "nav.home":"Αρχική","nav.about":"Σχετικά","nav.work":"Έργα μας","nav.services":"Υπηρεσίες","nav.team":"Ομάδα","nav.details":"Κάλυψη","nav.join":"Γίνε μέλος",
     "ops.eyebrow":"Πού Δραστηριοποιούμαστε","ops.title":"Δύο Χώρες. Αμέτρητοι Δρόμοι.","ops.desc":"Από τους ζωντανούς δρόμους της Αθήνας μέχρι τις ηλιόλουστες ακτές της Κύπρου — παραδίδουμε εκεί που έχει σημασία.",
     "ops.gr.name":"Ελλάδα","ops.gr.tag":"Κάλυψη ηπειρωτικής και νησιών","ops.cy.name":"Κύπρος","ops.cy.tag":"Εξυπηρετούμε τα μεγάλα κέντρα του νησιού",
     "ops.f1.t":"Ευρεία Κάλυψη","ops.f1.d":"10+ πόλεις σε δύο χώρες.",
@@ -77,7 +77,7 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"Χρησιμοποιούμε cookies","cookie.desc":"Χρησιμοποιούμε cookies για να βελτιώσουμε την εμπειρία περιήγησης και να εξατομικεύσουμε το περιεχόμενο.","cookie.accept":"Αποδοχή όλων","cookie.decline":"Απόρριψη"
   },
   ar: {
-    "nav.home":"الرئيسية","nav.about":"من نحن","nav.work":"أعمالنا","nav.services":"الخدمات","nav.team":"الفريق","nav.details":"التغطية","nav.join":"انضم إلى فريقنا","nav.menuTitle":"القائمة",
+    "nav.home":"الرئيسية","nav.about":"من نحن","nav.work":"أعمالنا","nav.services":"الخدمات","nav.team":"الفريق","nav.details":"التغطية","nav.join":"انضم إلى فريقنا",
     "ops.eyebrow":"أين نعمل","ops.title":"دولتان. شوارع لا تعد ولا تحصى.","ops.desc":"من شوارع أثينا النابضة إلى سواحل قبرص المشمسة — نوصل حيث يهم الأمر.",
     "ops.gr.name":"اليونان","ops.gr.tag":"تغطية البر الرئيسي والجزر","ops.cy.name":"قبرص","ops.cy.tag":"نخدم المراكز الرئيسية في الجزيرة",
     "ops.f1.t":"تغطية واسعة","ops.f1.d":"أكثر من  10 مدن في دولتين.",
@@ -114,7 +114,7 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"نستخدم ملفات تعريف الارتباط","cookie.desc":"نستخدم ملفات تعريف الارتباط لتعزيز تجربة التصفح وتحليل حركة الموقع وتخصيص المحتوى. بالنقر على «قبول»، فإنك توافق على استخدامنا لها.","cookie.accept":"قبول الكل","cookie.decline":"رفض"
   },
   fa: {
-    "nav.home":"خانه","nav.about":"درباره ما","nav.work":"کارهای ما","nav.services":"خدمات","nav.team":"تیم","nav.details":"پوشش","nav.join":"به تیم ما بپیوندید","nav.menuTitle":"منو",
+    "nav.home":"خانه","nav.about":"درباره ما","nav.work":"کارهای ما","nav.services":"خدمات","nav.team":"تیم","nav.details":"پوشش","nav.join":"به تیم ما بپیوندید",
     "ops.eyebrow":"جایی که فعالیت می‌کنیم","ops.title":"دو کشور. خیابان‌های بی‌شمار.","ops.desc":"از خیابان‌های پررفت‌و‌آمد آتن تا سواحل آفتابی قبرس — هر جا که مهم باشد تحویل می‌دهیم.",
     "ops.gr.name":"یونان","ops.gr.tag":"پوشش خاک اصلی و جزایر","ops.cy.name":"قبرس","ops.cy.tag":"خدمت‌رسانی به مراکز اصلی جزیره",
     "ops.f1.t":"پوشش گسترده","ops.f1.d":"بیش از ۱۰ شهر در دو کشور.",
@@ -151,7 +151,7 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"ما از کوکی استفاده می‌کنیم","cookie.desc":"ما از کوکی‌ها برای بهبود تجربه مرور، تحلیل ترافیک و شخصی‌سازی محتوا استفاده می‌کنیم.","cookie.accept":"پذیرش همه","cookie.decline":"رد کردن"
   },
   ur: {
-    "nav.home":"ہوم","nav.about":"ہمارے بارے میں","nav.work":"ہمارا کام","nav.services":"خدمات","nav.team":"ٹیم","nav.details":"کوریج","nav.join":"ہماری ٹیم میں شامل ہوں","nav.menuTitle":"مینو",
+    "nav.home":"ہوم","nav.about":"ہمارے بارے میں","nav.work":"ہمارا کام","nav.services":"خدمات","nav.team":"ٹیم","nav.details":"کوریج","nav.join":"ہماری ٹیم میں شامل ہوں",
     "ops.eyebrow":"ہم کہاں کام کرتے ہیں","ops.title":"دو ممالک۔ بے شمار گلیاں۔","ops.desc":"ایتھنز کی مصروف سڑکوں سے لے کر قبرص کے دھوپ بھرے ساحلوں تک — جہاں ضرورت ہو ہم دیلیوری کرتے ہیں۔",
     "ops.gr.name":"یونان","ops.gr.tag":"مرکزی علاقے اور جزائر کی کوریج","ops.cy.name":"قبرص","ops.cy.tag":"جزیرے کے اہم مراکز کی خدمت",
     "ops.f1.t":"وسیع کوریج","ops.f1.d":"دو ممالک میں 10+ شہر.",
@@ -188,7 +188,7 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"ہم کوکیز استعمال کرتے ہیں","cookie.desc":"ہم آپ کے براؤزنگ تجربے کو بہتر بنانے، ٹریفک کا تجزیہ کرنے اور مواد کو ذاتی بنانے کے لیے کوکیز استعمال کرتے ہیں۔","cookie.accept":"سب قبول کریں","cookie.decline":"مسترد کریں"
   },
   es: {
-    "nav.home":"Inicio","nav.about":"Acerca","nav.work":"Nuestro Trabajo","nav.services":"Servicios","nav.team":"Equipo","nav.details":"Cobertura","nav.join":"Únete a Nuestro Equipo","nav.menuTitle":"Menú",
+    "nav.home":"Inicio","nav.about":"Acerca","nav.work":"Nuestro Trabajo","nav.services":"Servicios","nav.team":"Equipo","nav.details":"Cobertura","nav.join":"Únete a Nuestro Equipo",
     "ops.eyebrow":"Dónde Operamos","ops.title":"Dos Países. Calles Sin Fin.","ops.desc":"Desde las animadas avenidas de Atenas hasta las costas soleadas de Chipre — entregamos donde más importa.",
     "ops.gr.name":"Grecia","ops.gr.tag":"Cobertura continental e insular","ops.cy.name":"Chipre","ops.cy.tag":"Servimos los principales centros de la isla",
     "ops.f1.t":"Amplia Cobertura","ops.f1.d":"Más de 10 ciudades en dos países.",
@@ -225,7 +225,7 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"Usamos cookies","cookie.desc":"Utilizamos cookies para mejorar tu experiencia de navegación, analizar el tráfico y personalizar el contenido.","cookie.accept":"Aceptar Todo","cookie.decline":"Rechazar"
   },
   fr: {
-    "nav.home":"Accueil","nav.about":"À propos","nav.work":"Nos Travaux","nav.services":"Services","nav.team":"Équipe","nav.details":"Couverture","nav.join":"Rejoignez-nous","nav.menuTitle":"Menu",
+    "nav.home":"Accueil","nav.about":"À propos","nav.work":"Nos Travaux","nav.services":"Services","nav.team":"Équipe","nav.details":"Couverture","nav.join":"Rejoignez-nous",
     "ops.eyebrow":"Où Nous Opérons","ops.title":"Deux Pays. D'innombrables Rues.","ops.desc":"Des boulevards animés d'Athènes aux côtes ensoleillées de Chypre — nous livrons là où ça compte.",
     "ops.gr.name":"Grèce","ops.gr.tag":"Couverture du continent et des îles","ops.cy.name":"Chypre","ops.cy.tag":"Au service des principaux centres de l'île",
     "ops.f1.t":"Large Couverture","ops.f1.d":"Plus de 10 villes dans deux pays.",
@@ -262,7 +262,7 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"Nous utilisons des cookies","cookie.desc":"Nous utilisons des cookies pour améliorer votre expérience de navigation, analyser le trafic et personnaliser le contenu.","cookie.accept":"Tout Accepter","cookie.decline":"Refuser"
   },
   de: {
-    "nav.home":"Start","nav.about":"Über uns","nav.work":"Unsere Arbeit","nav.services":"Leistungen","nav.team":"Team","nav.details":"Abdeckung","nav.join":"Werde Teil des Teams","nav.menuTitle":"Menü",
+    "nav.home":"Start","nav.about":"Über uns","nav.work":"Unsere Arbeit","nav.services":"Leistungen","nav.team":"Team","nav.details":"Abdeckung","nav.join":"Werde Teil des Teams",
     "ops.eyebrow":"Wo wir tätig sind","ops.title":"Zwei Länder. Unzählige Straßen.","ops.desc":"Von den lebhaften Boulevards Athens bis zu den sonnigen Küsten Zyperns — wir liefern dort, wo es zählt.",
     "ops.gr.name":"Griechenland","ops.gr.tag":"Festland & Inseln Abdeckung","ops.cy.name":"Zypern","ops.cy.tag":"Wir bedienen die wichtigsten Zentren der Insel",
     "ops.f1.t":"Breite Abdeckung","ops.f1.d":"Über 10 Städte in zwei Ländern.",
@@ -299,7 +299,7 @@ const TFT_TRANSLATIONS = {
     "cookie.title":"Wir verwenden Cookies","cookie.desc":"Wir verwenden Cookies, um dein Surferlebnis zu verbessern, den Verkehr zu analysieren und Inhalte zu personalisieren.","cookie.accept":"Alle akzeptieren","cookie.decline":"Ablehnen"
   },
   it: {
-    "nav.home":"Home","nav.about":"Chi siamo","nav.work":"I nostri lavori","nav.services":"Servizi","nav.team":"Team","nav.details":"Copertura","nav.join":"Unisciti al Team","nav.menuTitle":"Menu",
+    "nav.home":"Home","nav.about":"Chi siamo","nav.work":"I nostri lavori","nav.services":"Servizi","nav.team":"Team","nav.details":"Copertura","nav.join":"Unisciti al Team",
     "ops.eyebrow":"Dove Operiamo","ops.title":"Due Paesi. Strade Infinite.","ops.desc":"Dai vivaci viali di Atene alle coste soleggiate di Cipro — consegniamo dove conta di più.",
     "ops.gr.name":"Grecia","ops.gr.tag":"Copertura continentale e isole","ops.cy.name":"Cipro","ops.cy.tag":"Serviamo i principali centri dell'isola",
     "ops.f1.t":"Ampia Copertura","ops.f1.d":"Oltre 10 città in due paesi.",
@@ -393,30 +393,27 @@ document.addEventListener('DOMContentLoaded', () => {
   // Mobile menu
   const menuToggle = document.getElementById('menuToggle');
   const navLinks = document.getElementById('navLinks');
+  const navClose = document.getElementById('navClose');
+  const navBackdrop = document.getElementById('navBackdrop');
   function closeMenu() {
     if (!navLinks) return;
     navLinks.classList.remove('active');
     document.body.classList.remove('menu-open');
+    if (menuToggle) menuToggle.setAttribute('aria-expanded','false');
   }
   function openMenu() {
     if (!navLinks) return;
     navLinks.classList.add('active');
     document.body.classList.add('menu-open');
+    if (menuToggle) menuToggle.setAttribute('aria-expanded','true');
   }
   if (menuToggle && navLinks) {
     menuToggle.addEventListener('click', () => {
       navLinks.classList.contains('active') ? closeMenu() : openMenu();
     });
-    const navClose = document.getElementById('navClose');
     if (navClose) navClose.addEventListener('click', closeMenu);
+    if (navBackdrop) navBackdrop.addEventListener('click', closeMenu);
     document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', closeMenu));
-    // Close on backdrop click
-    document.addEventListener('click', e => {
-      if (document.body.classList.contains('menu-open') &&
-          !navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
-        closeMenu();
-      }
-    });
     // Close on Escape
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
   }

@@ -28,7 +28,6 @@ img{max-width:100%;display:block}
 .logo i{color:var(--primary);font-size:1.6rem}
 .logo span{color:var(--primary)}
 .nav-links{display:flex;gap:32px;list-style:none}
-.nav-drawer-header{display:none}
 .nav-links a{font-weight:500;font-size:.95rem;color:var(--secondary);position:relative;transition:color .3s}
 .nav-links a::after{content:'';position:absolute;bottom:-6px;left:0;width:0;height:2px;background:var(--primary);transition:width .3s}
 .nav-links a:hover{color:var(--primary)}
@@ -37,6 +36,7 @@ img{max-width:100%;display:block}
 .nav-cta:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 8px 20px rgba(255,107,0,.4)}
 .nav-cta::after{display:none}
 .menu-toggle{display:none;background:none;border:none;font-size:1.6rem;color:var(--secondary);cursor:pointer}
+.nav-backdrop,.nav-close{display:none}
 
 /* Hero — fully fluid */
 .hero{position:relative;min-height:100svh;display:flex;align-items:center;color:#fff;overflow:hidden;padding-top:clamp(70px,8vh,100px);padding-bottom:clamp(40px,6vh,80px)}
@@ -325,6 +325,7 @@ html[dir="rtl"] .cookie-banner h4{flex-direction:row-reverse;justify-content:fle
   html[dir="rtl"] .nav-links.active li{transform:translateX(0)}
   html[dir="rtl"] .nav-links a{flex-direction:row-reverse;text-align:right}
   html[dir="rtl"] .nav-links a:hover,html[dir="rtl"] .nav-links a:active{transform:translateX(4px)}
+  html[dir="rtl"] .nav-close{right:auto;left:14px}
   html[dir="rtl"] .hero .hero-content{text-align:center;align-items:center;padding:20px 24px}
   html[dir="rtl"] .hero .hero-content .hero-buttons{justify-content:center;flex-direction:row}
 }
@@ -365,45 +366,45 @@ html[dir="rtl"] .cookie-banner h4{flex-direction:row-reverse;justify-content:fle
   .logo{font-size:1.3rem}
   .logo i{font-size:1.5rem}
 
-  /* Hamburger button (animated) */
+  /* Hamburger button (animated; hidden when drawer is open — replaced by .nav-close) */
   .menu-toggle{display:flex;flex-direction:column;justify-content:center;align-items:center;width:44px;height:44px;border-radius:12px;background:var(--bg-soft);transition:all .3s;gap:5px;padding:0}
   .menu-toggle i{display:none}
   .menu-toggle::before,.menu-toggle::after,.menu-toggle span.bar{content:'';display:block;width:22px;height:2.5px;background:var(--secondary);border-radius:2px;transition:all .35s cubic-bezier(.65,.05,.36,1)}
   .menu-toggle span.bar{margin:0}
-  body.menu-open .menu-toggle{background:var(--primary)}
-  body.menu-open .menu-toggle::before,body.menu-open .menu-toggle::after,body.menu-open .menu-toggle span.bar{background:#fff}
-  body.menu-open .menu-toggle::before{transform:translateY(7.5px) rotate(45deg)}
-  body.menu-open .menu-toggle::after{transform:translateY(-7.5px) rotate(-45deg)}
-  body.menu-open .menu-toggle span.bar{opacity:0;transform:scaleX(0)}
+  body.menu-open .menu-toggle{opacity:0;pointer-events:none}
+
+  /* Backdrop (no blur — keeps mobile GPU fast) */
+  .nav-backdrop{display:block;position:fixed;inset:0;background:rgba(15,23,42,.5);z-index:998;opacity:0;pointer-events:none;transition:opacity .35s ease;will-change:opacity}
+  body.menu-open .nav-backdrop{opacity:1;pointer-events:auto}
+
+  /* Dedicated close button (shows only when drawer is open) */
+  .nav-close{display:flex;position:fixed;top:14px;right:14px;width:44px;height:44px;border-radius:12px;align-items:center;justify-content:center;background:#fff;border:1.5px solid #e5e7eb;color:var(--secondary);font-size:1.15rem;cursor:pointer;z-index:1001;opacity:0;transform:scale(.7) rotate(-90deg);pointer-events:none;transition:opacity .3s ease,transform .35s cubic-bezier(.22,1,.36,1),background .25s,color .25s,border-color .25s;box-shadow:0 6px 18px rgba(15,23,42,.12)}
+  body.menu-open .nav-close{opacity:1;transform:scale(1) rotate(0);pointer-events:auto;transition-delay:.15s}
+  .nav-close:hover,.nav-close:focus-visible{background:var(--primary);color:#fff;border-color:var(--primary)}
+  .nav-close:active{transform:scale(.92)}
 
   /* Mobile nav drawer — modern */
-  .nav-links{position:fixed;top:0;right:-100%;flex-direction:column;background:#ffffff;width:86%;max-width:360px;height:100vh;padding:0 20px 40px;gap:6px;box-shadow:-20px 0 60px rgba(15,23,42,.2);transition:right .45s cubic-bezier(.22,1,.36,1);align-items:stretch;overflow-y:auto}
+  .nav-links{position:fixed;top:0;right:-100%;flex-direction:column;background:#ffffff;width:84%;max-width:340px;height:100vh;padding:80px 22px 40px;gap:6px;box-shadow:-20px 0 60px rgba(15,23,42,.2);transition:right .45s cubic-bezier(.22,1,.36,1);align-items:stretch;overflow-y:auto;z-index:1000;will-change:transform}
+  .nav-links::before{content:'';position:absolute;top:0;left:0;right:0;height:70px;background:linear-gradient(180deg,var(--bg-soft) 0%,transparent 100%);pointer-events:none;z-index:0}
   .nav-links.active{right:0}
   .nav-links li{position:relative;z-index:1;width:100%;opacity:0;transform:translateX(24px);transition:all .45s cubic-bezier(.22,1,.36,1)}
   .nav-links.active li{opacity:1;transform:translateX(0)}
-  .nav-links.active li:nth-child(2){transition-delay:.10s}
-  .nav-links.active li:nth-child(3){transition-delay:.15s}
-  .nav-links.active li:nth-child(4){transition-delay:.20s}
-  .nav-links.active li:nth-child(5){transition-delay:.25s}
-  .nav-links.active li:nth-child(6){transition-delay:.30s}
-  .nav-links.active li:nth-child(7){transition-delay:.35s}
-  .nav-links.active li:nth-child(8){transition-delay:.40s}
+  .nav-links.active li:nth-child(1){transition-delay:.10s}
+  .nav-links.active li:nth-child(2){transition-delay:.15s}
+  .nav-links.active li:nth-child(3){transition-delay:.20s}
+  .nav-links.active li:nth-child(4){transition-delay:.25s}
+  .nav-links.active li:nth-child(5){transition-delay:.30s}
+  .nav-links.active li:nth-child(6){transition-delay:.35s}
+  .nav-links.active li:nth-child(7){transition-delay:.40s}
 
-  /* Drawer header (logo + close button) — only visible inside mobile drawer */
-  .nav-drawer-header{display:flex!important;align-items:center;justify-content:space-between;padding:18px 6px 14px;margin:0 -20px 18px;border-bottom:1px solid #eef2f7;background:linear-gradient(180deg,var(--bg-soft) 0%,#fff 100%);position:sticky;top:0;z-index:5;opacity:1!important;transform:none!important;padding-left:24px;padding-right:24px}
-  .nav-drawer-title{display:flex;align-items:center;gap:10px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:1rem;color:var(--secondary);letter-spacing:.5px;text-transform:uppercase}
-  .nav-drawer-title i{color:var(--primary);font-size:1.15rem}
-  .nav-close{width:38px;height:38px;border-radius:50%;border:none;background:var(--bg-soft);color:var(--secondary);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.95rem;transition:all .25s}
-  .nav-close:hover,.nav-close:active{background:var(--primary);color:#fff;transform:rotate(90deg)}
-
-  .nav-links a{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:14px;font-size:1rem;font-weight:500;color:var(--secondary);transition:all .3s cubic-bezier(.22,1,.36,1);position:relative}
-  .nav-links a::before{font-family:'Font Awesome 6 Free';font-weight:900;color:var(--primary);font-size:1rem;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:rgba(255,107,0,.1);border-radius:10px;transition:all .3s;flex-shrink:0}
-  .nav-links li:nth-child(2) a::before{content:'\f015'} /* home */
-  .nav-links li:nth-child(3) a::before{content:'\f05a'} /* info */
-  .nav-links li:nth-child(4) a::before{content:'\f03e'} /* image — Our Work */
-  .nav-links li:nth-child(5) a::before{content:'\f0e4'} /* gauge — Services */
-  .nav-links li:nth-child(6) a::before{content:'\f0c0'} /* users — Team */
-  .nav-links li:nth-child(7) a::before{content:'\f3c5'} /* map-marker — Coverage */
+  .nav-links a{display:flex;align-items:center;gap:16px;padding:15px 18px;border-radius:14px;font-size:1rem;font-weight:500;color:var(--secondary);transition:all .3s cubic-bezier(.22,1,.36,1);position:relative}
+  .nav-links a::before{font-family:'Font Awesome 6 Free';font-weight:900;color:var(--primary);font-size:1rem;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:rgba(255,107,0,.1);border-radius:10px;transition:all .3s}
+  .nav-links li:nth-child(1) a::before{content:'\f015'} /* home */
+  .nav-links li:nth-child(2) a::before{content:'\f05a'} /* info */
+  .nav-links li:nth-child(3) a::before{content:'\f03e'} /* image — Our Work */
+  .nav-links li:nth-child(4) a::before{content:'\f0e4'} /* gauge — Services */
+  .nav-links li:nth-child(5) a::before{content:'\f0c0'} /* users — Team */
+  .nav-links li:nth-child(6) a::before{content:'\f3c5'} /* map-marker — Details */
   .nav-links a:hover,.nav-links a:active{background:var(--bg-soft);color:var(--primary);transform:translateX(-4px)}
   .nav-links a:hover::before,.nav-links a:active::before{background:var(--primary);color:#fff;transform:scale(1.05)}
   .nav-links a::after{display:none}
