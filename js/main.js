@@ -507,6 +507,47 @@ document.addEventListener('DOMContentLoaded', () => {
       tftApplyLang(btn.dataset.lang);
     });
   }
+
+  // Draggable modals (desktop only)
+  function makeDraggable(modal, headerSelector) {
+    if (!modal || window.matchMedia('(max-width: 992px)').matches) return;
+    const header = modal.querySelector(headerSelector);
+    if (!header) return;
+    const panel = modal.querySelector('[class*="-panel"]');
+    if (!panel) return;
+
+    let isDragging = false;
+    let startX, startY, initialX, initialY;
+
+    header.addEventListener('mousedown', e => {
+      if (e.target.closest('[data-close]')) return;
+      isDragging = true;
+      startX = e.clientX;
+      startY = e.clientY;
+      const rect = panel.getBoundingClientRect();
+      initialX = rect.left;
+      initialY = rect.top;
+      panel.style.position = 'fixed';
+      panel.style.margin = '0';
+      panel.style.transform = 'none';
+    });
+
+    document.addEventListener('mousemove', e => {
+      if (!isDragging) return;
+      const dx = e.clientX - startX;
+      const dy = e.clientY - startY;
+      panel.style.left = initialX + dx + 'px';
+      panel.style.top = initialY + dy + 'px';
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+    });
+  }
+
+  // Enable dragging for modals
+  makeDraggable(contactModal, '.contact-modal-header');
+  makeDraggable(settingsModal, '.settings-header');
   // Initial language: saved -> browser -> en
   let initialLang = 'en';
   try { initialLang = localStorage.getItem('tft_lang') || ''; } catch(e){}
