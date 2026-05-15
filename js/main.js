@@ -1,5 +1,13 @@
 // ===== TFT Company — Main JS =====
 
+// ===== Loading State =====
+window.addEventListener('load', () => {
+  const loadingState = document.getElementById('loadingState');
+  if (loadingState) {
+    loadingState.classList.add('hidden');
+  }
+});
+
 // ===== i18n translations =====
 const TFT_TRANSLATIONS = {
   en: {
@@ -381,10 +389,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // Navbar scroll + back-to-top
   const navbar = document.getElementById('navbar');
   const backTop = document.getElementById('backTop');
+  const scrollIndicator = document.querySelector('.scroll-indicator');
   window.addEventListener('scroll', () => {
     const y = window.scrollY;
     if (navbar) navbar.classList.toggle('scrolled', y > 20);
     if (backTop) backTop.classList.toggle('show', y > 500);
+    // Hide scroll indicator when scrolling down
+    if (scrollIndicator) {
+      scrollIndicator.style.opacity = y > 100 ? '0' : '1';
+      scrollIndicator.style.pointerEvents = y > 100 ? 'none' : 'auto';
+    }
   });
   if (backTop) {
     backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
@@ -432,10 +446,91 @@ document.addEventListener('DOMContentLoaded', () => {
   // Contact form (FormSubmit.co handles delivery to tft@tftinfo.net)
   const form = document.getElementById('contactForm');
   if (form) {
+    // Real-time validation
+    const nameInput = form.name;
+    const emailInput = form.email;
+    const messageInput = form.message;
+
+    function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email);
+    }
+
+    function showError(input, message) {
+      const formGroup = input.parentElement;
+      let errorElement = formGroup.querySelector('.error-message');
+      if (!errorElement) {
+        errorElement = document.createElement('span');
+        errorElement.className = 'error-message';
+        formGroup.appendChild(errorElement);
+      }
+      errorElement.textContent = message;
+      input.style.borderColor = '#ef4444';
+    }
+
+    function clearError(input) {
+      const formGroup = input.parentElement;
+      const errorElement = formGroup.querySelector('.error-message');
+      if (errorElement) {
+        errorElement.remove();
+      }
+      input.style.borderColor = '#e5e7eb';
+    }
+
+    nameInput.addEventListener('blur', () => {
+      if (!nameInput.value.trim()) {
+        showError(nameInput, 'Name is required');
+      } else {
+        clearError(nameInput);
+      }
+    });
+
+    emailInput.addEventListener('blur', () => {
+      if (!emailInput.value.trim()) {
+        showError(emailInput, 'Email is required');
+      } else if (!validateEmail(emailInput.value)) {
+        showError(emailInput, 'Please enter a valid email');
+      } else {
+        clearError(emailInput);
+      }
+    });
+
+    messageInput.addEventListener('blur', () => {
+      if (!messageInput.value.trim()) {
+        showError(messageInput, 'Message is required');
+      } else if (messageInput.value.trim().length < 10) {
+        showError(messageInput, 'Message must be at least 10 characters');
+      } else {
+        clearError(messageInput);
+      }
+    });
+
     form.addEventListener('submit', e => {
-      if (!form.name.value.trim() || !form.email.value.trim() || !form.message.value.trim()) {
+      let isValid = true;
+
+      if (!nameInput.value.trim()) {
+        showError(nameInput, 'Name is required');
+        isValid = false;
+      }
+
+      if (!emailInput.value.trim()) {
+        showError(emailInput, 'Email is required');
+        isValid = false;
+      } else if (!validateEmail(emailInput.value)) {
+        showError(emailInput, 'Please enter a valid email');
+        isValid = false;
+      }
+
+      if (!messageInput.value.trim()) {
+        showError(messageInput, 'Message is required');
+        isValid = false;
+      } else if (messageInput.value.trim().length < 10) {
+        showError(messageInput, 'Message must be at least 10 characters');
+        isValid = false;
+      }
+
+      if (!isValid) {
         e.preventDefault();
-        alert('Please fill in all required fields.');
       }
     });
   }
