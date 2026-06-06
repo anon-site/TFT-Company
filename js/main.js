@@ -361,6 +361,7 @@ function tftApplyTheme(themeKey){
   root.style.setProperty('--primary', t.primary);
   root.style.setProperty('--primary-dark', t.primaryDark);
   root.style.setProperty('--grad', t.grad);
+  document.documentElement.setAttribute('data-theme', themeKey);
   try { localStorage.setItem('tft_theme', themeKey); } catch(e){}
   document.querySelectorAll('.theme-option').forEach(b =>
     b.classList.toggle('active', b.dataset.theme === themeKey)
