@@ -43,7 +43,7 @@ const TFT_TRANSLATIONS = {
     "form.title":"Send Us a Message","form.desc":"Fill out the form below and our team will reach out within 24 hours.",
     "form.name":"Full Name *","form.email":"Email *","form.phone":"Phone","form.subject":"Subject","form.message":"Message *","form.messagePh":"Tell us about yourself or your inquiry...","form.openBtn":"Open Message Form","form.send":"Send Message","form.success":"Thank you! Your message has been sent successfully.",
     "footer.desc":"Where Prompt Delivery Meets Today's Need.<br>Reliable same-day, parcel, and door-to-door delivery across Greece.",
-    "settings.title":"Settings","settings.lang":"Language","credit.design":"Design & Development",
+    "settings.title":"Settings","settings.lang":"Language","settings.theme":"Theme","theme.cyan":"Cyan","theme.red":"Red","theme.blue":"Blue","theme.green":"Green","theme.purple":"Purple","credit.design":"Design & Development",
     "map.eyebrow":"Our Location","map.title":"Find Us on the Map","map.desc":"Visit our headquarters in Athens, Greece — we're easy to find and always ready to welcome you.",
     "cookie.title":"We use cookies","cookie.desc":"We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking \"Accept\", you consent to our use of cookies.","cookie.accept":"Accept All","cookie.decline":"Decline"
   },
@@ -80,7 +80,7 @@ const TFT_TRANSLATIONS = {
     "form.title":"Στείλε μας μήνυμα","form.desc":"Συμπλήρωσε τη φόρμα και η ομάδα μας θα επικοινωνήσει εντός 24 ωρών.",
     "form.name":"Ονοματεπώνυμο *","form.email":"Email *","form.phone":"Τηλέφωνο","form.subject":"Θέμα","form.message":"Μήνυμα *","form.messagePh":"Πες μας για σένα ή το αίτημά σου...","form.openBtn":"Άνοιγμα Φόρμας","form.send":"Αποστολή","form.success":"Ευχαριστούμε! Το μήνυμά σας στάλθηκε επιτυχώς.",
     "footer.desc":"Όπου η ταχεία παράδοση συναντά τις σύγχρονες ανάγκες.<br>Αξιόπιστη παράδοση σε Ελλάδα.",
-    "settings.title":"Ρυθμίσεις","settings.lang":"Γλώσσα","credit.design":"Σχεδιασμός & Ανάπτυξη",
+    "settings.title":"Ρυθμίσεις","settings.lang":"Γλώσσα","settings.theme":"Θέμα","theme.cyan":"Κυανό","theme.red":"Κόκκινο","theme.blue":"Μπλε","theme.green":"Πράσινο","theme.purple":"Μωβό","credit.design":"Σχεδιασμός & Ανάπτυξη",
     "map.eyebrow":"Η Τοποθεσία μας","map.title":"Βρες μας στον χάρτη","map.desc":"Επισκέψου τα γραφεία μας στην Αθήνα — είμαστε εύκολα προσβάσιμοι και πάντα έτοιμοι να σε υποδεχθούμε.",
     "cookie.title":"Χρησιμοποιούμε cookies","cookie.desc":"Χρησιμοποιούμε cookies για να βελτιώσουμε την εμπειρία περιήγησης και να εξατομικεύσουμε το περιεχόμενο.","cookie.accept":"Αποδοχή όλων","cookie.decline":"Απόρριψη"
   },
@@ -117,7 +117,7 @@ const TFT_TRANSLATIONS = {
     "form.title":"أرسل لنا رسالة","form.desc":"املأ النموذج أدناه وسيتواصل معك فريقنا خلال 24 ساعة.",
     "form.name":"الاسم الكامل *","form.email":"البريد الإلكتروني *","form.phone":"الهاتف","form.subject":"الموضوع","form.message":"الرسالة *","form.messagePh":"أخبرنا عن نفسك أو استفسارك...","form.openBtn":"فتح نموذج الرسالة","form.send":"إرسال الرسالة","form.success":"شكراً لك! تم إرسال رسالتك بنجاح.",
     "footer.desc":"حيث يلتقي التوصيل السريع باحتياجات اليوم.<br>توصيل موثوق في نفس اليوم وللطرود ومن الباب إلى الباب في اليونان.",
-    "settings.title":"الإعدادات","settings.lang":"اللغة","credit.design":"تصميم وتطوير",
+    "settings.title":"الإعدادات","settings.lang":"اللغة","settings.theme":"المظهر","theme.cyan":"سمائي","theme.red":"أحمر","theme.blue":"أزرق","theme.green":"أخضر","theme.purple":"بنفسجي","credit.design":"تصميم وتطوير",
     "map.eyebrow":"موقعنا","map.title":"اعثر علينا على الخريطة","map.desc":"قم بزيارة مقرنا الرئيسي في أثينا، اليونان — يسهل العثور علينا ونحن دائماً جاهزون للترحيب بك.",
     "cookie.title":"نستخدم ملفات تعريف الارتباط","cookie.desc":"نستخدم ملفات تعريف الارتباط لتعزيز تجربة التصفح وتحليل حركة الموقع وتخصيص المحتوى. بالنقر على «قبول»، فإنك توافق على استخدامنا لها.","cookie.accept":"قبول الكل","cookie.decline":"رفض"
   },
@@ -154,7 +154,7 @@ const TFT_TRANSLATIONS = {
     "form.title":"برای ما پیام بفرستید","form.desc":"فرم زیر را پر کنید؛ تیم ما ظرف ۲۴ ساعت پاسخ خواهد داد.",
     "form.name":"نام کامل *","form.email":"ایمیل *","form.phone":"تلفن","form.subject":"موضوع","form.message":"پیام *","form.messagePh":"درباره خود یا درخواستتان به ما بگویید...","form.openBtn":"باز کردن فرم پیام","form.send":"ارسال پیام","form.success":"متشکریم! پیام شما با موفقیت ارسال شد.",
     "footer.desc":"جایی که تحویل سریع با نیاز امروز ملاقات می‌کند.<br>تحویل قابل اعتماد در سراسر یونان.",
-    "settings.title":"تنظیمات","settings.lang":"زبان","credit.design":"طراحی و توسعه",
+    "settings.title":"تنظیمات","settings.lang":"زبان","settings.theme":"تم","theme.cyan":"آبی","theme.red":"قرمز","theme.blue":"آبی","theme.green":"سبز","theme.purple":"بنفشه‌ای","credit.design":"طراحی و توسعه",
     "map.eyebrow":"موقعیت ما","map.title":"ما را روی نقشه پیدا کنید","map.desc":"از دفتر مرکزی ما در آتن، یونان دیدن کنید — یافتن ما آسان است و همیشه آماده استقبال از شما هستیم.",
     "cookie.title":"ما از کوکی استفاده می‌کنیم","cookie.desc":"ما از کوکی‌ها برای بهبود تجربه مرور، تحلیل ترافیک و شخصی‌سازی محتوا استفاده می‌کنیم.","cookie.accept":"پذیرش همه","cookie.decline":"رد کردن"
   },
@@ -191,7 +191,7 @@ const TFT_TRANSLATIONS = {
     "form.title":"ہمیں پیغام بھیجیں","form.desc":"نیچے فارم پُر کریں اور ہماری ٹیم 24 گھنٹوں میں رابطہ کرے گی۔",
     "form.name":"پورا نام *","form.email":"ای میل *","form.phone":"فون","form.subject":"موضوع","form.message":"پیغام *","form.messagePh":"اپنے بارے میں یا اپنے سوال کے بارے میں بتائیں...","form.openBtn":"پیغام فارم کھولیں","form.send":"پیغام بھیجیں","form.success":"شکریہ! آپ کا پیغام کامیابی سے بھیج دیا گیا ہے۔",
     "footer.desc":"جہاں فوری ڈلیوری آج کی ضرورت سے ملتی ہے۔<br>یونان میں قابل اعتماد ڈلیوری۔",
-    "settings.title":"ترتیبات","settings.lang":"زبان","credit.design":"ڈیزائن اور تیاری",
+    "settings.title":"ترتیبات","settings.lang":"زبان","settings.theme":"تھیم","theme.cyan":"نیلا","theme.red":"سرخ","theme.blue":"نیلا","theme.green":"سبز","theme.purple":"بھنفسجی","credit.design":"ڈیزائن اور تیاری",
     "map.eyebrow":"ہمارا مقام","map.title":"نقشے پر ہمیں تلاش کریں","map.desc":"ایتھنز، یونان میں ہمارے ہیڈکوارٹر کا دورہ کریں — ہمیں تلاش کرنا آسان ہے اور ہم ہمیشہ آپ کا استقبال کرنے کے لیے تیار ہیں۔",
     "cookie.title":"ہم کوکیز استعمال کرتے ہیں","cookie.desc":"ہم آپ کے براؤزنگ تجربے کو بہتر بنانے، ٹریفک کا تجزیہ کرنے اور مواد کو ذاتی بنانے کے لیے کوکیز استعمال کرتے ہیں۔","cookie.accept":"سب قبول کریں","cookie.decline":"مسترد کریں"
   },
@@ -228,7 +228,7 @@ const TFT_TRANSLATIONS = {
     "form.title":"Envíanos un Mensaje","form.desc":"Rellena el formulario y nuestro equipo te contactará en 24 horas.",
     "form.name":"Nombre Completo *","form.email":"Email *","form.phone":"Teléfono","form.subject":"Asunto","form.message":"Mensaje *","form.messagePh":"Cuéntanos sobre ti o tu consulta...","form.openBtn":"Abrir Formulario","form.send":"Enviar Mensaje","form.success":"¡Gracias! Tu mensaje se ha enviado correctamente.",
     "footer.desc":"Donde la entrega rápida se encuentra con la necesidad de hoy.<br>Entrega fiable en Grecia.",
-    "settings.title":"Configuración","settings.lang":"Idioma","credit.design":"Diseño & Desarrollo",
+    "settings.title":"Configuración","settings.lang":"Idioma","settings.theme":"Tema","theme.cyan":"Cian","theme.red":"Rojo","theme.blue":"Azul","theme.green":"Verde","theme.purple":"Morado","credit.design":"Diseño & Desarrollo",
     "map.eyebrow":"Nuestra Ubicación","map.title":"Encuéntranos en el mapa","map.desc":"Visita nuestra sede en Atenas, Grecia — somos fáciles de encontrar y siempre listos para recibirte.",
     "cookie.title":"Usamos cookies","cookie.desc":"Utilizamos cookies para mejorar tu experiencia de navegación, analizar el tráfico y personalizar el contenido.","cookie.accept":"Aceptar Todo","cookie.decline":"Rechazar"
   },
@@ -265,7 +265,7 @@ const TFT_TRANSLATIONS = {
     "form.title":"Envoyez-nous un Message","form.desc":"Remplissez le formulaire et notre équipe vous répondra sous 24 heures.",
     "form.name":"Nom Complet *","form.email":"Email *","form.phone":"Téléphone","form.subject":"Sujet","form.message":"Message *","form.messagePh":"Parlez-nous de vous ou de votre demande...","form.openBtn":"Ouvrir le Formulaire","form.send":"Envoyer","form.success":"Merci ! Votre message a été envoyé avec succès.",
     "footer.desc":"Où la livraison rapide rencontre les besoins d'aujourd'hui.<br>Livraison fiable en Grèce.",
-    "settings.title":"Paramètres","settings.lang":"Langue","credit.design":"Conception & Développement",
+    "settings.title":"Paramètres","settings.lang":"Langue","settings.theme":"Thème","theme.cyan":"Cyan","theme.red":"Rouge","theme.blue":"Bleu","theme.green":"Vert","theme.purple":"Violet","credit.design":"Conception & Développement",
     "map.eyebrow":"Notre Emplacement","map.title":"Trouvez-nous sur la carte","map.desc":"Visitez notre siège à Athènes, en Grèce — facile à trouver et toujours prêts à vous accueillir.",
     "cookie.title":"Nous utilisons des cookies","cookie.desc":"Nous utilisons des cookies pour améliorer votre expérience de navigation, analyser le trafic et personnaliser le contenu.","cookie.accept":"Tout Accepter","cookie.decline":"Refuser"
   },
@@ -302,7 +302,7 @@ const TFT_TRANSLATIONS = {
     "form.title":"Sende uns eine Nachricht","form.desc":"Fülle das Formular aus und unser Team meldet sich innerhalb von 24 Stunden.",
     "form.name":"Vollständiger Name *","form.email":"E-Mail *","form.phone":"Telefon","form.subject":"Betreff","form.message":"Nachricht *","form.messagePh":"Erzähl uns von dir oder deiner Anfrage...","form.openBtn":"Formular öffnen","form.send":"Nachricht senden","form.success":"Vielen Dank! Deine Nachricht wurde erfolgreich gesendet.",
     "footer.desc":"Wo schnelle Lieferung auf den heutigen Bedarf trifft.<br>Zuverlässige Lieferung in Griechenland.",
-    "settings.title":"Einstellungen","settings.lang":"Sprache","credit.design":"Design & Entwicklung",
+    "settings.title":"Einstellungen","settings.lang":"Sprache","settings.theme":"Farbschema","theme.cyan":"Türkis","theme.red":"Rot","theme.blue":"Blau","theme.green":"Grün","theme.purple":"Lila","credit.design":"Design & Entwicklung",
     "map.eyebrow":"Unser Standort","map.title":"Finde uns auf der Karte","map.desc":"Besuche unser Hauptquartier in Athen, Griechenland — wir sind leicht zu finden und freuen uns immer auf dich.",
     "cookie.title":"Wir verwenden Cookies","cookie.desc":"Wir verwenden Cookies, um dein Surferlebnis zu verbessern, den Verkehr zu analysieren und Inhalte zu personalisieren.","cookie.accept":"Alle akzeptieren","cookie.decline":"Ablehnen"
   },
@@ -339,13 +339,33 @@ const TFT_TRANSLATIONS = {
     "form.title":"Inviaci un Messaggio","form.desc":"Compila il modulo e il nostro team ti risponderà entro 24 ore.",
     "form.name":"Nome Completo *","form.email":"Email *","form.phone":"Telefono","form.subject":"Oggetto","form.message":"Messaggio *","form.messagePh":"Parlaci di te o della tua richiesta...","form.openBtn":"Apri il Modulo","form.send":"Invia Messaggio","form.success":"Grazie! Il tuo messaggio è stato inviato con successo.",
     "footer.desc":"Dove la consegna rapida incontra le esigenze di oggi.<br>Consegna affidabile in Grecia.",
-    "settings.title":"Impostazioni","settings.lang":"Lingua","credit.design":"Design & Sviluppo",
+    "settings.title":"Impostazioni","settings.lang":"Lingua","settings.theme":"Tema","theme.cyan":"Ciano","theme.red":"Rosso","theme.blue":"Blu","theme.green":"Verde","theme.purple":"Viola","credit.design":"Design & Sviluppo",
     "map.eyebrow":"La Nostra Posizione","map.title":"Trovaci sulla mappa","map.desc":"Visita la nostra sede ad Atene, in Grecia — siamo facili da trovare e sempre pronti ad accoglierti.",
     "cookie.title":"Utilizziamo i cookie","cookie.desc":"Utilizziamo i cookie per migliorare la tua esperienza di navigazione, analizzare il traffico e personalizzare i contenuti.","cookie.accept":"Accetta Tutto","cookie.decline":"Rifiuta"
   }
 };
 
 const TFT_RTL_LANGS = ['ar','fa','ur'];
+
+const TFT_THEMES = {
+  cyan:  { primary:'#0dcaf0', primaryDark:'#0aa2c0', grad:'linear-gradient(135deg,#0dcaf0 0%,#5B62F4 50%,#9d4edd 100%)' },
+  red:   { primary:'#ef4444', primaryDark:'#dc2626', grad:'linear-gradient(135deg,#ef4444 0%,#f97316 50%,#fbbf24 100%)' },
+  blue:  { primary:'#3b82f6', primaryDark:'#2563eb', grad:'linear-gradient(135deg,#3b82f6 0%,#06b6d4 50%,#8b5cf6 100%)' },
+  green: { primary:'#22c55e', primaryDark:'#16a34a', grad:'linear-gradient(135deg,#22c55e 0%,#14b8a6 50%,#06b6d4 100%)' },
+  purple:{ primary:'#a855f7', primaryDark:'#9333ea', grad:'linear-gradient(135deg,#a855f7 0%,#ec4899 50%,#f43f5e 100%)' }
+};
+
+function tftApplyTheme(themeKey){
+  const t = TFT_THEMES[themeKey] || TFT_THEMES.cyan;
+  const root = document.documentElement;
+  root.style.setProperty('--primary', t.primary);
+  root.style.setProperty('--primary-dark', t.primaryDark);
+  root.style.setProperty('--grad', t.grad);
+  try { localStorage.setItem('tft_theme', themeKey); } catch(e){}
+  document.querySelectorAll('.theme-option').forEach(b =>
+    b.classList.toggle('active', b.dataset.theme === themeKey)
+  );
+}
 
 // On-demand font loading for non-Latin scripts (saves ~250KB on initial load)
 const TFT_LANG_FONTS = {
@@ -627,6 +647,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Theme switcher
+  const themeGrid = document.getElementById('themeGrid');
+  if (themeGrid) {
+    themeGrid.addEventListener('click', e => {
+      const btn = e.target.closest('.theme-option');
+      if (!btn) return;
+      tftApplyTheme(btn.dataset.theme);
+    });
+  }
+  // Initial theme: saved -> cyan
+  let initialTheme = 'cyan';
+  try { initialTheme = localStorage.getItem('tft_theme') || 'cyan'; } catch(e){}
+  tftApplyTheme(initialTheme);
+
   // Draggable modals (desktop only)
   function makeDraggable(modal, headerSelector) {
     if (!modal || window.matchMedia('(max-width: 992px)').matches) return;
@@ -680,6 +714,11 @@ document.addEventListener('DOMContentLoaded', () => {
     else initialLang = 'en';
   }
   tftApplyLang(initialLang);
+
+  // Re-apply active theme class after language switch re-renders text
+  let savedTheme = 'cyan';
+  try { savedTheme = localStorage.getItem('tft_theme') || 'cyan'; } catch(e){}
+  tftApplyTheme(savedTheme);
 
   // Cookie consent (GDPR)
   const cookieBanner = document.getElementById('cookieBanner');

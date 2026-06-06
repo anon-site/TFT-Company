@@ -284,6 +284,26 @@ footer{background:var(--secondary);color:rgba(255,255,255,.8);padding:36px 0 16p
 .lang-option:hover{border-color:var(--primary);background:#fff}
 .lang-option.active{background:var(--primary);color:#fff;border-color:var(--primary)}
 
+/* Theme picker */
+.theme-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.theme-option{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 4px;background:transparent;border:1.5px solid transparent;border-radius:12px;font-family:inherit;font-size:.82rem;font-weight:600;color:var(--text);cursor:pointer;transition:all .2s;position:relative}
+.theme-option .theme-swatch{width:40px;height:40px;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.18);transition:transform .2s;border:2px solid #fff}
+.theme-option .theme-check{position:absolute;top:6px;right:50%;transform:translateX(18px);width:16px;height:16px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:8px;color:var(--text);box-shadow:0 1px 4px rgba(0,0,0,.2);opacity:0;transition:opacity .2s}
+.theme-option .theme-name{font-size:.72rem;font-weight:500;color:var(--muted);white-space:nowrap;transition:color .2s}
+.theme-option:hover .theme-swatch{transform:scale(1.08)}
+.theme-option.active .theme-swatch{box-shadow:0 0 0 2.5px var(--primary)}
+.theme-option.active .theme-check{opacity:1}
+.theme-option.active .theme-name{color:var(--primary);font-weight:600}
+
+/* Mobile theme picker */
+@media (max-width:680px){
+  .theme-grid{grid-template-columns:repeat(5,1fr);gap:6px}
+  .theme-option{padding:8px 2px}
+  .theme-option .theme-swatch{width:34px;height:34px}
+  .theme-option .theme-check{transform:translateX(15px);width:14px;height:14px;font-size:7px}
+  .theme-option .theme-name{font-size:.65rem}
+}
+
 /* RTL / language-specific fonts (loaded on-demand via main.js) */
 html[lang="ar"] body,html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3,html[lang="ar"] h4{font-family:'Cairo','Poppins',sans-serif}
 html[lang="fa"] body,html[lang="fa"] h1,html[lang="fa"] h2,html[lang="fa"] h3,html[lang="fa"] h4{font-family:'Vazirmatn','Cairo','Poppins',sans-serif}
