@@ -656,9 +656,9 @@ document.addEventListener('DOMContentLoaded', () => {
       tftApplyTheme(btn.dataset.theme);
     });
   }
-  // Initial theme: saved -> cyan
-  let initialTheme = 'cyan';
-  try { initialTheme = localStorage.getItem('tft_theme') || 'cyan'; } catch(e){}
+  // Initial theme: saved -> blue
+  let initialTheme = 'blue';
+  try { initialTheme = localStorage.getItem('tft_theme') || 'blue'; } catch(e){}
   tftApplyTheme(initialTheme);
 
   // Draggable modals (desktop only)
@@ -716,8 +716,8 @@ document.addEventListener('DOMContentLoaded', () => {
   tftApplyLang(initialLang);
 
   // Re-apply active theme class after language switch re-renders text
-  let savedTheme = 'cyan';
-  try { savedTheme = localStorage.getItem('tft_theme') || 'cyan'; } catch(e){}
+  let savedTheme = 'blue';
+  try { savedTheme = localStorage.getItem('tft_theme') || 'blue'; } catch(e){}
   tftApplyTheme(savedTheme);
 
   // Cookie consent (GDPR)
