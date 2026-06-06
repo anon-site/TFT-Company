@@ -1,12 +1,12 @@
 // ===== TFT Company — Main JS =====
 
-// ===== Loading State =====
-window.addEventListener('load', () => {
-  const loadingState = document.getElementById('loadingState');
-  if (loadingState) {
-    loadingState.classList.add('hidden');
-  }
-});
+// ===== Loading State - disabled =====
+// window.addEventListener('load', () => {
+//   const loadingState = document.getElementById('loadingState');
+//   if (loadingState) {
+//     loadingState.classList.add('hidden');
+//   }
+// });
 
 // ===== i18n translations =====
 const TFT_TRANSLATIONS = {
@@ -477,16 +477,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
   }
 
-  // Scroll reveal
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
-    });
-  }, { threshold: .12 });
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  // Scroll reveal - disabled
+  // const observer = new IntersectionObserver((entries) => {
+  //   entries.forEach(e => {
+  //     if (e.isIntersecting) {
+  //       e.target.classList.add('visible');
+  //       observer.unobserve(e.target);
+  //     }
+  //   });
+  // }, { threshold: .12 });
+  // document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
   // Contact form (FormSubmit.co handles delivery to tft@tftinfo.net)
   const form = document.getElementById('contactForm');
