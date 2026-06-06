@@ -91,8 +91,7 @@ section{padding:100px 0}
 .stat h3{color:var(--primary);font-size:2rem;font-weight:800;margin-bottom:4px}
 .stat p{font-size:.85rem;color:var(--muted);margin:0}
 .about-img{position:relative}
-.about-img img{border-radius:var(--radius);box-shadow:var(--shadow-lg);width:100%;height:480px;object-fit:cover;animation:aboutImgSlideIn 2.5s cubic-bezier(.22,1,.36,1) forwards}
-@keyframes aboutImgSlideIn{from{opacity:0;transform:translateX(80px)}to{opacity:1;transform:translateX(0)}}
+.about-img img{border-radius:var(--radius);box-shadow:var(--shadow-lg);width:100%;height:480px;object-fit:cover}
 .about-img::before{content:'';position:absolute;top:-20px;left:-20px;width:80%;height:80%;background:var(--primary);border-radius:var(--radius);z-index:-1;opacity:.15}
 
 /* Gallery 3x2 */
@@ -161,8 +160,7 @@ section{padding:100px 0}
 
 /* Team */
 .team-content{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center}
-.team-content img{border-radius:var(--radius);box-shadow:var(--shadow-lg);width:100%;height:450px;object-fit:cover;animation:teamImgSlideIn 2.5s cubic-bezier(.22,1,.36,1) forwards}
-@keyframes teamImgSlideIn{from{opacity:0;transform:translateX(-80px)}to{opacity:1;transform:translateX(0)}}
+.team-content img{border-radius:var(--radius);box-shadow:var(--shadow-lg);width:100%;height:450px;object-fit:cover}
 .team-text h2{font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:20px}
 .team-text p{color:var(--muted);font-size:1.05rem;margin-bottom:18px}
 .team-features{list-style:none;margin-top:24px}
@@ -423,6 +421,20 @@ html[dir="rtl"] .cookie-banner h4{flex-direction:row-reverse;justify-content:fle
 /* Reveal */
 .reveal{opacity:0;transform:translateY(40px);transition:all .8s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
+.about-text.reveal{opacity:0;transform:translateX(-80px);transition:opacity 2.5s cubic-bezier(.22,1,.36,1),transform 2.5s cubic-bezier(.22,1,.36,1)}
+.about-img.reveal{opacity:0;transform:translateX(80px);transition:opacity 2.5s cubic-bezier(.22,1,.36,1),transform 2.5s cubic-bezier(.22,1,.36,1)}
+.about-text.reveal.visible,.about-img.reveal.visible{opacity:1;transform:translateX(0)}
+.team-content > div:first-child.reveal{opacity:0;transform:translateX(-80px);transition:opacity 2.5s cubic-bezier(.22,1,.36,1),transform 2.5s cubic-bezier(.22,1,.36,1)}
+.team-text.reveal{opacity:0;transform:translateX(80px);transition:opacity 2.5s cubic-bezier(.22,1,.36,1),transform 2.5s cubic-bezier(.22,1,.36,1)}
+.team-content > div:first-child.reveal.visible,.team-text.reveal.visible{opacity:1;transform:translateX(0)}
+.services-grid .service-card:nth-child(1).reveal{opacity:0;transform:translateX(100%) scale(0.85);transition:opacity 2.5s cubic-bezier(.22,1,.36,1),transform 2.5s cubic-bezier(.22,1,.36,1)}
+.services-grid .service-card:nth-child(2).reveal{opacity:0;transform:translateY(80px) scale(0.85);transition:opacity 2.5s cubic-bezier(.22,1,.36,1),transform 2.5s cubic-bezier(.22,1,.36,1)}
+.services-grid .service-card:nth-child(3).reveal{opacity:0;transform:translateX(-100%) scale(0.85);transition:opacity 2.5s cubic-bezier(.22,1,.36,1),transform 2.5s cubic-bezier(.22,1,.36,1)}
+.services-grid .service-card:nth-child(1).reveal.visible,.services-grid .service-card:nth-child(2).reveal.visible,.services-grid .service-card:nth-child(3).reveal.visible{opacity:1;transform:translateX(0) translateY(0) scale(1)}
+#contact .section-title.reveal{opacity:0;transform:translateY(-80px);transition:opacity 2.5s cubic-bezier(.22,1,.36,1),transform 2.5s cubic-bezier(.22,1,.36,1)}
+#contact .contact-cta.reveal{opacity:0;transform:translateX(80px);transition:opacity 2.5s cubic-bezier(.22,1,.36,1),transform 2.5s cubic-bezier(.22,1,.36,1)}
+#contact .contact-info.reveal{opacity:0;transform:translateX(-80px);transition:opacity 2.5s cubic-bezier(.22,1,.36,1),transform 2.5s cubic-bezier(.22,1,.36,1)}
+#contact .section-title.reveal.visible,#contact .contact-cta.reveal.visible,#contact .contact-info.reveal.visible{opacity:1;transform:translateX(0) translateY(0)}
 
 /* ===== Responsive ===== */
 
