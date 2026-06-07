@@ -477,16 +477,55 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
   }
 
-  // Scroll reveal - disabled
-  // const observer = new IntersectionObserver((entries) => {
-  //   entries.forEach(e => {
-  //     if (e.isIntersecting) {
-  //       e.target.classList.add('visible');
-  //       observer.unobserve(e.target);
-  //     }
-  //   });
-  // }, { threshold: .12 });
-  // document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  // ===== Professional Scroll Animations =====
+  const animationObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const target = entry.target;
+        
+        // Add visible class with slight delay for smoother feel
+        requestAnimationFrame(() => {
+          target.classList.add('visible');
+        });
+        
+        // Unobserve after animation triggers
+        animationObserver.unobserve(target);
+      }
+    });
+  }, {
+    threshold: 0.15,
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  // Observe all reveal elements
+  document.querySelectorAll('.reveal, .reveal-fade-up, .reveal-fade-in, .reveal-slide-left, .reveal-slide-right, .reveal-scale-up, .reveal-scale-down').forEach(el => {
+    animationObserver.observe(el);
+  });
+
+  // Trigger hero background animation on page load
+  const heroBg = document.querySelector('.hero-bg');
+  if (heroBg) {
+    setTimeout(() => {
+      heroBg.classList.add('visible');
+    }, 200);
+  }
+
+  // Staggered animations for grouped elements
+  function applyStaggeredAnimations(selector, baseDelay = 100) {
+    const elements = document.querySelectorAll(selector);
+    elements.forEach((el, index) => {
+      el.style.transitionDelay = `${index * baseDelay}ms`;
+    });
+  }
+
+  // Apply staggered delays to specific groups
+  applyStaggeredAnimations('.gallery-cell.reveal', 120);
+  applyStaggeredAnimations('.service-card.reveal', 150);
+  applyStaggeredAnimations('.stat.reveal', 100);
+  applyStaggeredAnimations('.ops-feature', 100);
+  applyStaggeredAnimations('.contact-item', 80);
+  applyStaggeredAnimations('.team-features li', 100);
+  applyStaggeredAnimations('.ops-cities span', 50);
 
   // Contact form (FormSubmit.co handles delivery to tft@tftinfo.net)
   const form = document.getElementById('contactForm');
