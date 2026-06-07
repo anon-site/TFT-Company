@@ -348,11 +348,11 @@ const TFT_TRANSLATIONS = {
 const TFT_RTL_LANGS = ['ar','fa','ur'];
 
 const TFT_THEMES = {
-  cyan:  { primary:'#0dcaf0', primaryDark:'#0aa2c0', grad:'linear-gradient(135deg,#0dcaf0 0%,#5B62F4 50%,#9d4edd 100%)' },
-  red:   { primary:'#ef4444', primaryDark:'#dc2626', grad:'linear-gradient(135deg,#ef4444 0%,#f97316 50%,#fbbf24 100%)' },
-  blue:  { primary:'#3b82f6', primaryDark:'#2563eb', grad:'linear-gradient(135deg,#3b82f6 0%,#06b6d4 50%,#8b5cf6 100%)' },
-  green: { primary:'#22c55e', primaryDark:'#16a34a', grad:'linear-gradient(135deg,#22c55e 0%,#14b8a6 50%,#06b6d4 100%)' },
-  purple:{ primary:'#a855f7', primaryDark:'#9333ea', grad:'linear-gradient(135deg,#a855f7 0%,#ec4899 50%,#f43f5e 100%)' }
+  cyan:  { primary:'#0dcaf0', primaryDark:'#0aa2c0', grad:'linear-gradient(135deg,#0dcaf0 0%,#5B62F4 50%,#9d4edd 100%)', heroImage:'img/0DCAF0.webp' },
+  red:   { primary:'#ef4444', primaryDark:'#dc2626', grad:'linear-gradient(135deg,#ef4444 0%,#f97316 50%,#fbbf24 100%)', heroImage:'img/EF4444.webp' },
+  blue:  { primary:'#3b82f6', primaryDark:'#2563eb', grad:'linear-gradient(135deg,#3b82f6 0%,#06b6d4 50%,#8b5cf6 100%)', heroImage:'img/3B82F6.webp' },
+  green: { primary:'#22c55e', primaryDark:'#16a34a', grad:'linear-gradient(135deg,#22c55e 0%,#14b8a6 50%,#06b6d4 100%)', heroImage:'img/22C55E.webp' },
+  purple:{ primary:'#a855f7', primaryDark:'#9333ea', grad:'linear-gradient(135deg,#a855f7 0%,#ec4899 50%,#f43f5e 100%)', heroImage:'img/A855F7.webp' }
 };
 
 function tftApplyTheme(themeKey){
@@ -362,6 +362,10 @@ function tftApplyTheme(themeKey){
   root.style.setProperty('--primary-dark', t.primaryDark);
   root.style.setProperty('--grad', t.grad);
   document.documentElement.setAttribute('data-theme', themeKey);
+  const heroBg = document.querySelector('.hero-bg');
+  if(heroBg && t.heroImage){
+    heroBg.style.backgroundImage = `url('${t.heroImage}')`;
+  }
   try { localStorage.setItem('tft_theme', themeKey); } catch(e){}
   document.querySelectorAll('.theme-option').forEach(b =>
     b.classList.toggle('active', b.dataset.theme === themeKey)
