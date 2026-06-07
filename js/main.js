@@ -482,19 +482,19 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const target = entry.target;
-        
+
         // Add visible class with slight delay for smoother feel
         requestAnimationFrame(() => {
           target.classList.add('visible');
         });
-        
+
         // Unobserve after animation triggers
         animationObserver.unobserve(target);
       }
     });
   }, {
-    threshold: 0.15,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0.1,
+    rootMargin: '0px 0px -30px 0px'
   });
 
   // Observe all reveal elements

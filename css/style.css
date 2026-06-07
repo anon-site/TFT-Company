@@ -553,35 +553,93 @@ html[dir="rtl"] .hero-bg{transform:translateX(150px) scale(1.05)}
 
 /* ===== Responsive ===== */
 
-/* Mobile - Disable animations for better performance */
+/* Mobile - Optimized animations for smooth performance */
 @media (max-width:768px){
+  /* Respect user's motion preferences */
+  @media (prefers-reduced-motion: reduce){
+    .reveal,.reveal-fade-up,.reveal-fade-in,.reveal-slide-left,.reveal-slide-right,.reveal-scale-up,.reveal-scale-down{
+      opacity:1;
+      transform:none;
+      transition:none;
+    }
+    .reveal.visible,.reveal-fade-up.visible,.reveal-fade-in.visible,.reveal-slide-left.visible,.reveal-slide-right.visible,.reveal-scale-up.visible,.reveal-scale-down.visible{
+      opacity:1;
+      transform:none;
+    }
+    .hero-badge,.hero h1,.hero p,.hero-buttons{
+      opacity:1;
+      transform:none;
+      animation:none;
+    }
+    .hero-bg{
+      opacity:1;
+      transform:none;
+      transition:none;
+    }
+  }
+
+  /* Lighter animations for mobile - faster and smoother */
   .reveal,.reveal-fade-up,.reveal-fade-in,.reveal-slide-left,.reveal-slide-right,.reveal-scale-up,.reveal-scale-down{
-    opacity:1;
-    transform:none;
-    transition:none;
+    opacity:0;
+    transform:translateY(30px) scale(0.98);
+    transition:opacity 0.5s ease-out,transform 0.5s ease-out;
   }
   .reveal.visible,.reveal-fade-up.visible,.reveal-fade-in.visible,.reveal-slide-left.visible,.reveal-slide-right.visible,.reveal-scale-up.visible,.reveal-scale-down.visible{
     opacity:1;
-    transform:none;
+    transform:translateY(0) scale(1);
   }
-  .hero-badge,.hero h1,.hero p,.hero-buttons{
-    opacity:1;
-    transform:none;
-    animation:none;
+
+  /* Hero animations - lighter on mobile */
+  .hero-badge{
+    opacity:0;
+    transform:translateY(-20px) scale(0.95);
+    animation:heroBadgeInMobile 0.8s ease-out 0.3s forwards;
+  }
+  .hero h1{
+    opacity:0;
+    transform:translateY(20px) scale(0.98);
+    animation:heroTitleInMobile 0.8s ease-out 0.5s forwards;
+  }
+  .hero p{
+    opacity:0;
+    transform:translateY(20px) scale(0.98);
+    animation:heroTextInMobile 0.8s ease-out 0.7s forwards;
+  }
+  .hero-buttons{
+    opacity:0;
+    transform:translateY(20px) scale(0.95);
+    animation:heroButtonsInMobile 0.8s ease-out 0.9s forwards;
   }
   .hero-bg{
     opacity:1;
     transform:none;
     transition:none;
   }
+
+  /* Section-specific mobile animations */
   .about-text.reveal,.about-img.reveal,.team-content > div:first-child.reveal,.team-text.reveal,.gallery-cell.reveal,.service-card.reveal,.stat.reveal,.contact-info.reveal,.contact-cta.reveal,.map-wrap.reveal{
-    opacity:1;
-    transform:none;
+    opacity:0;
+    transform:translateY(25px) scale(0.98);
+    transition:opacity 0.5s ease-out,transform 0.5s ease-out;
   }
   .about-text.reveal.visible,.about-img.reveal.visible,.team-content > div:first-child.reveal.visible,.team-text.reveal.visible,.gallery-cell.reveal.visible,.service-card.reveal.visible,.stat.reveal.visible,.contact-info.reveal.visible,.contact-cta.reveal.visible,.map-wrap.reveal.visible{
     opacity:1;
-    transform:none;
+    transform:translateY(0) scale(1);
   }
+}
+
+/* Mobile animation keyframes */
+@keyframes heroBadgeInMobile{
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes heroTitleInMobile{
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes heroTextInMobile{
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes heroButtonsInMobile{
+  to{opacity:1;transform:translateY(0) scale(1)}
 }
 
 /* Tablet & small desktop */
